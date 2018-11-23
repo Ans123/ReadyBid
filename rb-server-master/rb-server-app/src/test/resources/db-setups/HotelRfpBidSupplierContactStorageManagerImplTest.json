@@ -1,0 +1,28 @@
+{
+  "collections": [
+    {
+      "name": "Bid",
+      "documents": [
+        {},
+        {
+          "_id" : { "ObjectId" : "5a005ea1bb832a0b00c83df2" },
+          "state" : {
+            "status" : "CREATED"
+          },
+          "rfp" : {
+            "_id" : { "ObjectId" : "5a005793bb832a0b00c83dee" }
+          }
+        },
+        {
+          "_id" : { "ObjectId" : "5a005ea1bb832a0b00c83df3" },
+          "state" : {
+            "status" : "NEGOTIATION_RESPONDED"
+          },
+          "rfp" : {
+            "_id" : { "ObjectId" : "5a005793bb832a0b00c83dee" }
+          }
+        }
+      ]
+    }
+  ]
+}

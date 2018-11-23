@@ -1,0 +1,608 @@
+/*
+  Creates 2 Registered Chain Representatives and 4 Unregistered Chain Representatives.
+
+  Registered Chain Representatives:
+  1. User Account id: 59df7063bb832a05ecde0001 // not used in Bids
+  2. User Account id: 59df7063bb832a05ecde0002 // used in Bids
+  3. User Account id: 59df7063bb832a05ecde0003; emailAddress: chainRep_3@gmail.com // used in Bids for Duplicates
+  4. User Account id: 59df7063bb832a05ecde0004; // inactive User used in Bids
+  5. User Account id: 59df7063bb832a05ecde0005; // Chain Representative of another Chain
+
+  Bids contain 4 Unregistered Chain Representatives and Both Registered Chain Representatives:
+  1. Singular new Contact within Bid
+  2. Duplicated by Email Contact within Bid
+  3. Duplicated by Email Contact within Bid
+  4. Duplicated by Email To Registered User within Bid
+  5. Registered User within Bid
+  4. Registered User Duplicated by Email To Contact within Bid
+*/
+{
+  "collections": [
+    {
+      "name": "Account",
+      "documents": [
+        {
+          "_id" : { "ObjectId" : "59b152fbbb832a069cd20001" },
+          "entityId" : { "ObjectId" : "56014c0a9537801174120001" },
+          "type" : "CHAIN",
+          "name" : "CHAIN 1",
+          "industry" : "TRAVEL_AND_HOSPITALITY",
+          "location" : {
+            "address" : {
+              "address1" : "Some Address",
+              "address2" : "",
+              "city" : "Some City",
+              "state" : "CA",
+              "zip" : "91381",
+              "country" : "US"
+            },
+            "fullAddress" : "Test",
+            "coordinates" : {
+              "lat" : 34.3783886,
+              "lng" : -118.5683269,
+              "point" : {
+                "type" : "Point",
+                "coordinates" : [
+                  -118.5683269,
+                  34.3783886
+                ]
+              }
+            }
+          },
+          "permissions" : {
+            "59b152fbbb832a069cd2870e" : [
+              "BUYER_READ",
+              "BUYER_UPDATE",
+              "BUYER_CREATE",
+              "BUYER_DELETE",
+              "SUPPLIER_READ",
+              "SUPPLIER_UPDATE",
+              "SUPPLIER_DELETE"
+            ]
+          },
+          "created" : {
+            "at" : { "ISODate" : "2017-09-07T14:08:59.884Z" },
+            "by" : {
+              "_id" : { "ObjectId" : "59ad5164bb832a251cde1eaa" },
+              "firstName" : "dejan",
+              "lastName" : "kosijer",
+              "emailAddress" : "real.deka@gmail.com",
+              "mobile" : "+381691413978"
+            }
+          },
+          "status" : {
+            "at" : { "ISODate" : "2017-09-07T14:08:59.884Z" },
+            "value" : "UNVERIFIED",
+            "by" : {
+              "_id" : { "ObjectId" : "59ad5164bb832a251cde1eaa" },
+              "firstName" : "dejan",
+              "lastName" : "kosijer",
+              "emailAddress" : "real.deka@gmail.com",
+              "mobile" : "+381691413978"
+            }
+          },
+          "changed" : { "NumberLong" : "1504793339884" }
+        },
+        {
+          "_id" : { "ObjectId" : "59b152fbbb832a069cd20002" },
+          "entityId" : { "ObjectId" : "56014c0a9537801174120002" },
+          "type" : "CHAIN",
+          "name" : "CHAIN 2",
+          "industry" : "TRAVEL_AND_HOSPITALITY",
+          "permissions" : {
+            "59b152fbbb832a069cd2870e" : [
+              "BUYER_READ",
+              "BUYER_UPDATE",
+              "BUYER_CREATE",
+              "BUYER_DELETE",
+              "SUPPLIER_READ",
+              "SUPPLIER_UPDATE",
+              "SUPPLIER_DELETE"
+            ]
+          },
+          "changed" : { "NumberLong" : "1504793339884" }
+        },
+        {
+          "_id" : { "ObjectId" : "59b152fbbb832a069cd2870e" },
+          "entityId" : { "ObjectId" : "56014c0a9537801174121ba3" },
+          "type" : "HOTEL",
+          "name" : "RESIDENCE INN CLARITA MARRIOTT",
+          "industry" : "TRAVEL_AND_HOSPITALITY",
+          "location" : {
+            "address" : {
+              "address1" : "25320 THE OLD RD",
+              "address2" : "",
+              "city" : "Santa Clarita",
+              "state" : "CA",
+              "zip" : "91381",
+              "country" : "US"
+            },
+            "fullAddress" : "25320 THE OLD RD, Santa Clarita CA 91381, United States",
+            "coordinates" : {
+              "lat" : 34.3783886,
+              "lng" : -118.5683269,
+              "point" : {
+                "type" : "Point",
+                "coordinates" : [
+                  -118.5683269,
+                  34.3783886
+                ]
+              }
+            }
+          },
+          "phone" : "16612902800",
+          "permissions" : {
+            "59b152fbbb832a069cd2870e" : [
+              "BUYER_READ",
+              "BUYER_UPDATE",
+              "BUYER_CREATE",
+              "BUYER_DELETE",
+              "SUPPLIER_READ",
+              "SUPPLIER_UPDATE",
+              "SUPPLIER_DELETE"
+            ]
+          },
+          "created" : {
+            "at" : { "ISODate" : "2017-09-07T14:08:59.884Z" },
+            "by" : {
+              "_id" : { "ObjectId" : "59ad5164bb832a251cde1eaa" },
+              "firstName" : "dejan",
+              "lastName" : "kosijer",
+              "emailAddress" : "real.deka@gmail.com",
+              "mobile" : "+381691413978"
+            }
+          },
+          "status" : {
+            "at" : { "ISODate" : "2017-09-07T14:08:59.884Z" },
+            "value" : "UNVERIFIED",
+            "by" : {
+              "_id" : { "ObjectId" : "59ad5164bb832a251cde1eaa" },
+              "firstName" : "dejan",
+              "lastName" : "kosijer",
+              "emailAddress" : "real.deka@gmail.com",
+              "mobile" : "+381691413978"
+            }
+          },
+          "changed" : { "NumberLong" : "1504793339884" }
+        }
+      ]
+    },
+    {
+      "name": "UserAccount",
+      "documents": [
+        {
+          "_id" : { "ObjectId" : "59df7063bb832a05ecde0001" } ,
+          "userId" : { "ObjectId" : "59ad5164bb832a251cde0001" },
+          "accountId" : { "ObjectId" : "59b152fbbb832a069cd20001" },
+          "jobTitle" : "CHAIN REP not Used in Bids",
+          "created" : {},
+          "status" : { "value" : "UNVERIFIED" },
+          "changed" : { "NumberLong" : 1524752188813 },
+          "defaultBmView" : { "ObjectId" : "59df7063bb832a05ecde996e" },
+          "bmViews" : [ { "ObjectId" : "59df7063bb832a05ecde996e" } ],
+          "lastBmView" : { "ObjectId" : "59df7063bb832a05ecde996e" }
+        },
+        {
+          "_id" : { "ObjectId" : "59df7063bb832a05ecde0002" } ,
+          "userId" : { "ObjectId" : "59ad5164bb832a251cde0002" },
+          "accountId" : { "ObjectId" : "59b152fbbb832a069cd20001" },
+          "jobTitle" : "CHAIN REP used in Bids",
+          "created" : {},
+          "status" : { "value" : "UNVERIFIED" },
+          "changed" : { "NumberLong" : 1524752188813 },
+          "defaultBmView" : { "ObjectId" : "59df7063bb832a05ecde996e" },
+          "bmViews" : [ { "ObjectId" : "59df7063bb832a05ecde996e" } ],
+          "lastBmView" : { "ObjectId" : "59df7063bb832a05ecde996e" }
+        },
+        {
+          "_id" : { "ObjectId" : "59df7063bb832a05ecde0003" } ,
+          "userId" : { "ObjectId" : "59ad5164bb832a251cde0003" },
+          "accountId" : { "ObjectId" : "59b152fbbb832a069cd20001" },
+          "jobTitle" : "CHAIN REP used in Bids for Duplicates",
+          "created" : {},
+          "status" : { "value" : "UNVERIFIED" },
+          "changed" : { "NumberLong" : 1524752188813 },
+          "defaultBmView" : { "ObjectId" : "59df7063bb832a05ecde996e" },
+          "bmViews" : [ { "ObjectId" : "59df7063bb832a05ecde996e" } ],
+          "lastBmView" : { "ObjectId" : "59df7063bb832a05ecde996e" }
+        },
+        {
+          "_id" : { "ObjectId" : "59df7063bb832a05ecde0004" } ,
+          "userId" : { "ObjectId" : "59ad5164bb832a251cde0004" },
+          "accountId" : { "ObjectId" : "59b152fbbb832a069cd20001" },
+          "jobTitle" : "Inactive CHAIN REP",
+          "created" : {},
+          "status" : { "value" : "UNVERIFIED" },
+          "changed" : { "NumberLong" : 1524752188813 },
+          "defaultBmView" : { "ObjectId" : "59df7063bb832a05ecde996e" },
+          "bmViews" : [ { "ObjectId" : "59df7063bb832a05ecde996e" } ],
+          "lastBmView" : { "ObjectId" : "59df7063bb832a05ecde996e" }
+        },
+        {
+          "_id" : { "ObjectId" : "59df7063bb832a05ecde0005" } ,
+          "userId" : { "ObjectId" : "59ad5164bb832a251cde0005" },
+          "accountId" : { "ObjectId" : "59b152fbbb832a069cd20002" },
+          "jobTitle" : "CHAIN REP of another Chain",
+          "created" : {},
+          "status" : { "value" : "UNVERIFIED" },
+          "changed" : { "NumberLong" : 1524752188813 },
+          "defaultBmView" : { "ObjectId" : "59df7063bb832a05ecde996e" },
+          "bmViews" : [ { "ObjectId" : "59df7063bb832a05ecde996e" } ],
+          "lastBmView" : { "ObjectId" : "59df7063bb832a05ecde996e" }
+        }
+      ]
+    },
+    {
+      "name": "User",
+      "documents": [
+        {
+          "_id" : { "ObjectId" : "59ad5164bb832a251cde0001" },
+          "firstName" : "Test 1",
+          "lastName" : "Test 1",
+          "emailAddress" : "chainRep_1@gmail.com",
+          "phone": "1234567",
+          "profilePicture": "picture.jpg",
+          "password" : "$2a$10$/JPpuA.gJjxbqaNZ8L3tOOcem9alHZ3FQ8iT/.MHPc2nQgxKqYi9S",
+          "userAccounts" : [ { "ObjectId" : "59df7063bb832a05ecde0000" } ],
+          "currentUserAccountId" : { "ObjectId" : "59df7063bb832a05ecde0000" },
+          "created" : {},
+          "status" : { "value" : "ACTIVE" },
+          "changed" : { "NumberLong" : 1514473909490 }
+        },
+        {
+          "_id" : { "ObjectId" : "59ad5164bb832a251cde0002" },
+          "firstName" : "Test 2",
+          "lastName" : "Test 2",
+          "emailAddress" : "chainRep_2@gmail.com",
+          "password" : "$2a$10$/JPpuA.gJjxbqaNZ8L3tOOcem9alHZ3FQ8iT/.MHPc2nQgxKqYi9S",
+          "userAccounts" : [ { "ObjectId" : "59df7063bb832a05ecde0002" } ],
+          "currentUserAccountId" : { "ObjectId" : "59df7063bb832a05ecde0002" },
+          "created" : {},
+          "status" : { "value" : "ACTIVE" },
+          "changed" : { "NumberLong" : 1514473909490 }
+        },
+        {
+          "_id" : { "ObjectId" : "59ad5164bb832a251cde0003" },
+          "firstName" : "Test 3",
+          "lastName" : "Test 3",
+          "emailAddress" : "chainRep_3@gmail.com",
+          "password" : "$2a$10$/JPpuA.gJjxbqaNZ8L3tOOcem9alHZ3FQ8iT/.MHPc2nQgxKqYi9S",
+          "tutorials" : [ "FillResponseOnlyOnce" ],
+          "userAccounts" : [ { "ObjectId" : "59df7063bb832a05ecde0003" } ],
+          "currentUserAccountId" : { "ObjectId" : "59df7063bb832a05ecde0003" },
+          "created" : {},
+          "status" : { "value" : "ACTIVE" },
+          "changed" : { "NumberLong" : 1514473909490 }
+        },
+        {
+          "_id" : { "ObjectId" : "59ad5164bb832a251cde0004" },
+          "firstName" : "Test 4",
+          "lastName" : "Test 4",
+          "emailAddress" : "chainRep_4@gmail.com",
+          "password" : "$2a$10$/JPpuA.gJjxbqaNZ8L3tOOcem9alHZ3FQ8iT/.MHPc2nQgxKqYi9S",
+          "tutorials" : [ "FillResponseOnlyOnce" ],
+          "userAccounts" : [ { "ObjectId" : "59df7063bb832a05ecde0004" } ],
+          "currentUserAccountId" : { "ObjectId" : "59df7063bb832a05ecde0004" },
+          "created" : {},
+          "status" : { "value" : "PENDING_EMAIL_VERIFICATION" },
+          "changed" : { "NumberLong" : 1514473909490 }
+        },
+        {
+          "_id" : { "ObjectId" : "59ad5164bb832a251cde0005" },
+          "firstName" : "Test 5",
+          "lastName" : "Test 5",
+          "emailAddress" : "chainRep_5@gmail.com",
+          "password" : "$2a$10$/JPpuA.gJjxbqaNZ8L3tOOcem9alHZ3FQ8iT/.MHPc2nQgxKqYi9S",
+          "tutorials" : [ "FillResponseOnlyOnce" ],
+          "userAccounts" : [ { "ObjectId" : "59df7063bb832a05ecde0005" } ],
+          "currentUserAccountId" : { "ObjectId" : "59df7063bb832a05ecde0005" },
+          "created" : {},
+          "status" : { "value" : "ACTIVE" },
+          "changed" : { "NumberLong" : 1514473909490 }
+        }
+      ]
+    },
+    {
+      "name": "Bid",
+      "documents": [
+        {
+          "_id" : { "ObjectId" : "5a0c8569bb832a2128f29600" },
+          "buyer" : {
+            "company" : {
+              "entityId" : { "ObjectId" : "56e597c2bfc40d2dfe0616b3" },
+              "accountId" : { "ObjectId" : "59ad5184bb832a27e8d38ff1" },
+              "name" : "Test Company 1234",
+              "type" : "COMPANY"
+            },
+            "contact" : {
+              "id" : { "ObjectId" : "59ad5184bb832a27e8d38ff2" },
+              "emailAddress" : "real.deka@gmail.com",
+              "company" : {
+                "entityId" : { "ObjectId" : "56e597c2bfc40d2dfe0616b3" },
+                "accountId" : { "ObjectId" : "59ad5184bb832a27e8d38ff1" }
+              }
+            }
+          },
+          "supplier" : {
+            "company" : {
+              "entityId" : { "ObjectId" : "56014c0995378011741206a3" },
+              "accountId" : { "ObjectId" : "5a0c8569bb832a2128f296a1" },
+              "name" : "THE MARK Preferred LEGEND",
+              "type" : "HOTEL"
+            },
+            "contact" : {
+              "id" : { "ObjectId" : "5a4508dabb832a2258950000" },
+              "firstName" : "Less Recent Duplicate",
+              "lastName" : "10",
+              "fullName" : "Less Recent Duplicate",
+              "emailAddress" : "chainRepFromBid@gmail.com",
+              "company" : {
+                "entityId" : { "ObjectId" : "56014c0a9537801174120001" },
+                "accountId" : { "ObjectId" : "59b152fbbb832a069cd20001" },
+                "name" : "CHAIN 1",
+                "type" : "CHAIN",
+                "industry" : "TRAVEL_AND_HOSPITALITY",
+                "code" : "PH",
+                "subtype" : "MASTER"
+              },
+              "isUser" : false
+            }
+          },
+          "state" : {
+            "at" : { "ISODate" : "2017-12-28T15:08:10.365Z" },
+            "status" : "SENT",
+            "by" : { "ObjectId" : "59ad5164bb832a251cde1eaa" }
+          }
+        },
+        {
+          "_id" : { "ObjectId" : "5a0c8569bb832a2128f29601" },
+          "buyer" : {
+            "company" : {
+              "entityId" : { "ObjectId" : "56e597c2bfc40d2dfe0616b3" },
+              "accountId" : { "ObjectId" : "59ad5184bb832a27e8d38ff1" },
+              "name" : "Test Company 1234",
+              "type" : "COMPANY"
+            },
+            "contact" : {
+              "id" : { "ObjectId" : "59ad5184bb832a27e8d38ff2" },
+              "emailAddress" : "real.deka@gmail.com",
+              "company" : {
+                "entityId" : { "ObjectId" : "56e597c2bfc40d2dfe0616b3" },
+                "accountId" : { "ObjectId" : "59ad5184bb832a27e8d38ff1" }
+              }
+            }
+          },
+          "supplier" : {
+            "company" : {
+              "entityId" : { "ObjectId" : "56014c0995378011741206a3" },
+              "accountId" : { "ObjectId" : "5a0c8569bb832a2128f296a1" },
+              "name" : "THE MARK Preferred LEGEND",
+              "type" : "HOTEL"
+            },
+            "contact" : {
+              "id" : { "ObjectId" : "5a4508dabb832a2258950001" },
+              "firstName" : "Chain Rep From Bid",
+              "lastName" : "10",
+              "fullName" : "Chain Rep From Bid 10",
+              "emailAddress" : "chainRepFromBid@gmail.com",
+              "phone": "1234567",
+              "profilePicture": "picture.jpg",
+              "jobTitle": "Bid Contact",
+              "company" : {
+                "entityId" : { "ObjectId" : "56014c0a9537801174120001" },
+                "accountId" : { "ObjectId" : "59b152fbbb832a069cd20001" },
+                "name" : "CHAIN 1",
+                "type" : "CHAIN",
+                "industry" : "TRAVEL_AND_HOSPITALITY",
+                "code" : "PH",
+                "subtype" : "MASTER"
+              },
+              "isUser" : false
+            }
+          },
+          "state" : {
+            "at" : { "ISODate" : "2017-12-28T15:08:10.365Z" },
+            "status" : "SENT",
+            "by" : { "ObjectId" : "59ad5164bb832a251cde1eaa" }
+          }
+        },
+        {
+          "_id" : { "ObjectId" : "5a0c8569bb832a2128f29602" },
+          "buyer" : {
+            "company" : {
+              "entityId" : { "ObjectId" : "56e597c2bfc40d2dfe0616b3" },
+              "accountId" : { "ObjectId" : "59ad5184bb832a27e8d38ff1" },
+              "name" : "Test Company 1234",
+              "type" : "COMPANY"
+            },
+            "contact" : {
+              "id" : { "ObjectId" : "59ad5184bb832a27e8d38ff2" },
+              "emailAddress" : "real.deka@gmail.com",
+              "company" : {
+                "entityId" : { "ObjectId" : "56e597c2bfc40d2dfe0616b3" },
+                "accountId" : { "ObjectId" : "59ad5184bb832a27e8d38ff1" }
+              }
+            }
+          },
+          "supplier" : {
+            "company" : {
+              "entityId" : { "ObjectId" : "56014c0995378011741206a3" },
+              "accountId" : { "ObjectId" : "5a0c8569bb832a2128f296a1" },
+              "name" : "THE MARK Preferred LEGEND",
+              "type" : "HOTEL"
+            },
+            "contact" : {
+              "id" : { "ObjectId" : "5a4508dabb832a2258950002" },
+              "firstName" : "Chain Rep From Unsent Bid",
+              "lastName" : "10",
+              "fullName" : "Chain Rep From Unsent Bid 10",
+              "emailAddress" : "chainRepFromUnsentBid@gmail.com",
+              "company" : {
+                "entityId" : { "ObjectId" : "56014c0a9537801174120001" },
+                "accountId" : { "ObjectId" : "59b152fbbb832a069cd20001" },
+                "name" : "CHAIN 1",
+                "type" : "CHAIN",
+                "industry" : "TRAVEL_AND_HOSPITALITY",
+                "code" : "PH",
+                "subtype" : "MASTER"
+              },
+              "isUser" : false
+            }
+          },
+          "state" : {
+            "at" : { "ISODate" : "2017-12-28T15:08:10.365Z" },
+            "status" : "CREATED",
+            "by" : { "ObjectId" : "59ad5164bb832a251cde1eaa" }
+          }
+        },
+        {
+          "_id" : { "ObjectId" : "5a0c8569bb832a2128f29603" },
+          "buyer" : {
+            "company" : {
+              "entityId" : { "ObjectId" : "56e597c2bfc40d2dfe0616b3" },
+              "accountId" : { "ObjectId" : "59ad5184bb832a27e8d38ff1" },
+              "name" : "Test Company 1234",
+              "type" : "COMPANY"
+            },
+            "contact" : {
+              "id" : { "ObjectId" : "59ad5184bb832a27e8d38ff2" },
+              "emailAddress" : "real.deka@gmail.com",
+              "company" : {
+                "entityId" : { "ObjectId" : "56e597c2bfc40d2dfe0616b3" },
+                "accountId" : { "ObjectId" : "59ad5184bb832a27e8d38ff1" }
+              }
+            }
+          },
+          "supplier" : {
+            "company" : {
+              "entityId" : { "ObjectId" : "56014c0995378011741206a3" },
+              "accountId" : { "ObjectId" : "5a0c8569bb832a2128f296a1" },
+              "name" : "THE MARK Preferred LEGEND",
+              "type" : "HOTEL"
+            },
+            "contact" : {
+              "id" : { "ObjectId" : "5a4508dabb832a2258950003" },
+              "firstName" : "Other Chain Rep From Unsent Bid",
+              "lastName" : "10",
+              "fullName" : "Other Chain Rep From Unsent Bid 10",
+              "emailAddress" : "otherChainRepFromUnsentBid@gmail.com",
+              "company" : {
+                "entityId" : { "ObjectId" : "56014c0a9537801174120001" },
+                "accountId" : { "ObjectId" : "59b152fbbb832a069cd20001" },
+                "name" : "CHAIN 1",
+                "type" : "CHAIN",
+                "industry" : "TRAVEL_AND_HOSPITALITY",
+                "code" : "PH",
+                "subtype" : "MASTER"
+              },
+              "isUser" : false
+            }
+          },
+          "state" : {
+            "at" : { "ISODate" : "2017-12-28T15:08:10.365Z" },
+            "status" : "SENT",
+            "by" : { "ObjectId" : "59ad5164bb832a251cde1eaa" }
+          }
+        },
+        {
+          "_id" : { "ObjectId" : "5a0c8569bb832a2128f29604" },
+          "buyer" : {
+            "company" : {
+              "entityId" : { "ObjectId" : "56e597c2bfc40d2dfe0616b3" },
+              "accountId" : { "ObjectId" : "59ad5184bb832a27e8d38ff1" },
+              "name" : "Test Company 1234",
+              "type" : "COMPANY"
+            },
+            "contact" : {
+              "id" : { "ObjectId" : "59ad5184bb832a27e8d38ff2" },
+              "emailAddress" : "real.deka@gmail.com",
+              "company" : {
+                "entityId" : { "ObjectId" : "56e597c2bfc40d2dfe0616b3" },
+                "accountId" : { "ObjectId" : "59ad5184bb832a27e8d38ff1" }
+              }
+            }
+          },
+          "supplier" : {
+            "company" : {
+              "entityId" : { "ObjectId" : "56014c0995378011741206a3" },
+              "accountId" : { "ObjectId" : "5a0c8569bb832a2128f296a1" },
+              "name" : "THE MARK Preferred LEGEND",
+              "type" : "HOTEL"
+            },
+            "contact" : {
+              "id" : { "ObjectId" : "5a4508dabb832a2258950004" },
+              "firstName" : "Some Other Contact",
+              "lastName" : "10",
+              "fullName" : "Some Other Contact 10",
+              "emailAddress" : "someOtherContact@gmail.com",
+              "company" : {
+                "entityId" : { "ObjectId" : "56014c0a9537801174120002" },
+                "accountId" : { "ObjectId" : "59b152fbbb832a069cd20002" },
+                "name" : "CHAIN 2",
+                "type" : "CHAIN",
+                "industry" : "TRAVEL_AND_HOSPITALITY",
+                "code" : "PH",
+                "subtype" : "MASTER"
+              },
+              "isUser" : false
+            }
+          },
+          "state" : {
+            "at" : { "ISODate" : "2017-12-28T15:08:10.365Z" },
+            "status" : "SENT",
+            "by" : { "ObjectId" : "59ad5164bb832a251cde1eaa" }
+          }
+        },
+        {
+          "_id" : { "ObjectId" : "5a0c8569bb832a2128f29605" },
+          "buyer" : {
+            "company" : {
+              "entityId" : { "ObjectId" : "56e597c2bfc40d2dfe0616b3" },
+              "accountId" : { "ObjectId" : "59ad5184bb832a27e8d38ff1" },
+              "name" : "Test Company 1234",
+              "type" : "COMPANY"
+            },
+            "contact" : {
+              "id" : { "ObjectId" : "59ad5184bb832a27e8d38ff2" },
+              "emailAddress" : "real.deka@gmail.com",
+              "company" : {
+                "entityId" : { "ObjectId" : "56e597c2bfc40d2dfe0616b3" },
+                "accountId" : { "ObjectId" : "59ad5184bb832a27e8d38ff1" }
+              }
+            }
+          },
+          "supplier" : {
+            "company" : {
+              "entityId" : { "ObjectId" : "56014c0995378011741206a3" },
+              "accountId" : { "ObjectId" : "5a0c8569bb832a2128f296a1" },
+              "name" : "THE MARK Preferred LEGEND",
+              "type" : "HOTEL"
+            },
+            "contact" : {
+              "id" : { "ObjectId" : "5a4508dabb832a2258950005" },
+              "firstName" : "Registered User Duplicate",
+              "lastName" : "10",
+              "fullName" : "Registered User Duplicate 10",
+              "emailAddress" : "chainRep_1@gmail.com",
+              "company" : {
+                "entityId" : { "ObjectId" : "56014c0a9537801174120001" },
+                "accountId" : { "ObjectId" : "59b152fbbb832a069cd20001" },
+                "name" : "CHAIN 1",
+                "type" : "CHAIN",
+                "industry" : "TRAVEL_AND_HOSPITALITY",
+                "code" : "PH",
+                "subtype" : "MASTER"
+              },
+              "isUser" : false
+            }
+          },
+          "state" : {
+            "at" : { "ISODate" : "2017-12-28T15:08:10.365Z" },
+            "status" : "SENT",
+            "by" : { "ObjectId" : "59ad5164bb832a251cde1eaa" }
+          }
+        }
+      ]
+    }
+  ]
+}

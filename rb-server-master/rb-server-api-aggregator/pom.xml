@@ -1,0 +1,71 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- project coordinates -->
+    <groupId>net.readybid.api</groupId>
+    <artifactId>rb-server-api-aggregator</artifactId>
+    <packaging>pom</packaging>
+    <name>APIs aggregator</name>
+
+    <parent>
+        <groupId>net.readybid</groupId>
+        <artifactId>rb-server</artifactId>
+        <version>0.1.6-RELEASE</version>
+    </parent>
+
+    <modules>
+        <module>rb-server-api-parent</module>
+        <module>rb-server-api-auth</module>
+        <module>rb-server-api-main</module>
+    </modules>
+
+    <!-- project dependencies -->
+    <dependencies>
+
+        <dependency>
+            <groupId>net.readybid</groupId>
+            <artifactId>rb-server-app</artifactId>
+            <version>${readybid.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>0.7.0</version>
+        </dependency>
+
+        <!-- TESTS -->
+        <dependency>
+            <groupId>net.readybid</groupId>
+            <artifactId>rb-server-core</artifactId>
+            <version>${readybid.version}</version>
+            <type>test-jar</type>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>net.readybid</groupId>
+            <artifactId>rb-server-app</artifactId>
+            <version>${readybid.version}</version>
+            <type>test-jar</type>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

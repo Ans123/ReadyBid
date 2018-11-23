@@ -1,0 +1,320 @@
+/**/
+{
+  "collections": [
+    {
+      "name": "Hotel",
+      "documents": [
+        {
+          "_id" : { "ObjectId" : "56014c0a9537801174120003" },
+          "type" : "HOTEL",
+          "name" : "HOTEL 1",
+          "chain": {
+            "_id" : { "ObjectId" : "5a314152e6d3107588940696" },
+            "name" : "Pullman Hotels",
+            "type" : "CHAIN",
+            "code" : "PU",
+            "master" : {
+              "_id" : { "ObjectId" : "56014c0a9537801174120001" },
+              "name" : "CHAIN 1",
+              "code" : "RT",
+              "type" : "CHAIN",
+              "subtype" : "MASTER"
+            },
+            "subtype" : "BRAND"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Account",
+      "documents": [
+        {
+          "_id" : { "ObjectId" : "59b152fbbb832a069cd20001" },
+          "entityId" : { "ObjectId" : "56014c0a9537801174120001" },
+          "type" : "CHAIN",
+          "name" : "CHAIN 1"
+        },
+        {
+          "_id" : { "ObjectId" : "59b152fbbb832a069cd20002" },
+          "entityId" : { "ObjectId" : "56014c0a9537801174120002" },
+          "type" : "CHAIN",
+          "name" : "CHAIN 2"
+        },
+        {
+          "_id" : { "ObjectId" : "59b152fbbb832a069cd20011" },
+          "entityId" : { "ObjectId" : "56014c0a9537801174120003" },
+          "type" : "HOTEL",
+          "name" : "HOTEL 1"
+        },
+        {
+          "_id" : { "ObjectId" : "59b152fbbb832a069cd20012" },
+          "entityId" : { "ObjectId" : "56014c0a9537801174120004" },
+          "type" : "HOTEL",
+          "name" : "HOTEL 2"
+        },
+        {
+          "_id": { "ObjectId": "59b152fbbb832a069cd2870e" },
+          "entityId": { "ObjectId": "56014c0a9537801174121ba3" },
+          "type": "HOTEL",
+          "name": "RESIDENCE INN CLARITA MARRIOTT"
+        },
+        {
+          "_id": { "ObjectId": "59b152fbbb832a069cd2870f" },
+          "entityId": { "ObjectId": "56014c0a9537801174121baa" },
+          "type": "CHAIN",
+          "name": "MARRIOTT"
+        }
+      ]
+    },
+    {
+      "name": "UserAccount",
+      "documents": [
+        {
+          "_id" : { "ObjectId" : "59df7063bb832a05ecde0001" } ,
+          "userId" : { "ObjectId" : "59ad5164bb832a251cde0001" },
+          "accountId" : { "ObjectId" : "59b152fbbb832a069cd20001" },
+          "jobTitle" : "CHAIN REP not Used in Bids"
+        },
+        {
+          "_id" : { "ObjectId" : "59df7063bb832a05ecde0002" } ,
+          "userId" : { "ObjectId" : "59ad5164bb832a251cde0002" },
+          "accountId" : { "ObjectId" : "59b152fbbb832a069cd20001" },
+          "jobTitle" : "CHAIN REP used in Bids"
+        },
+        {
+          "_id" : { "ObjectId" : "59df7063bb832a05ecde0003" } ,
+          "userId" : { "ObjectId" : "59ad5164bb832a251cde0003" },
+          "accountId" : { "ObjectId" : "59b152fbbb832a069cd20001" },
+          "jobTitle" : "CHAIN REP used in Bids for Duplicates"
+        },
+        {
+          "_id" : { "ObjectId" : "59df7063bb832a05ecde0004" } ,
+          "userId" : { "ObjectId" : "59ad5164bb832a251cde0004" },
+          "accountId" : { "ObjectId" : "59b152fbbb832a069cd20001" },
+          "jobTitle" : "Inactive CHAIN REP"
+        },
+        {
+          "_id" : { "ObjectId" : "59df7063bb832a05ecde0005" } ,
+          "userId" : { "ObjectId" : "59ad5164bb832a251cde0005" },
+          "accountId" : { "ObjectId" : "59b152fbbb832a069cd20002" },
+          "jobTitle" : "CHAIN REP of another Chain"
+        },
+        {
+          "_id" : { "ObjectId" : "59df7063bb832a05ecde0006" } ,
+          "userId" : { "ObjectId" : "59df7063bb832a05ecde0006" },
+          "accountId" : { "ObjectId" : "59b152fbbb832a069cd20011" },
+          "jobTitle" : "HOTEL REP"
+        }
+      ]
+    },
+    {
+      "name": "User",
+      "documents": [
+        {
+          "_id" : { "ObjectId" : "59ad5164bb832a251cde0001" },
+          "firstName" : "Test 1",
+          "lastName" : "Test 1",
+          "emailAddress" : "chainRep_1@gmail.com",
+          "phone": "1234567",
+          "profilePicture": "picture.jpg",
+          "status" : { "value" : "ACTIVE" }
+        },
+        {
+          "_id" : { "ObjectId" : "59ad5164bb832a251cde0002" },
+          "firstName" : "Test 2",
+          "lastName" : "Test 2",
+          "emailAddress" : "chainRep_2@gmail.com",
+          "status" : { "value" : "ACTIVE" }
+        },
+        {
+          "_id" : { "ObjectId" : "59ad5164bb832a251cde0003" },
+          "firstName" : "Test 3",
+          "lastName" : "Test 3",
+          "emailAddress" : "chainRep_3@gmail.com",
+          "status" : { "value" : "ACTIVE" }
+        },
+        {
+          "_id" : { "ObjectId" : "59ad5164bb832a251cde0004" },
+          "firstName" : "Test 4",
+          "lastName" : "Test 4",
+          "emailAddress" : "chainRep_4@gmail.com",
+          "status" : { "value" : "PENDING_EMAIL_VERIFICATION" }
+        },
+        {
+          "_id" : { "ObjectId" : "59ad5164bb832a251cde0005" },
+          "firstName" : "Test 5",
+          "lastName" : "Test 5",
+          "emailAddress" : "chainRep_5@gmail.com",
+          "status" : { "value" : "ACTIVE" }
+        },
+        {
+          "_id" : { "ObjectId" : "59df7063bb832a05ecde0006" },
+          "firstName" : "Test 6",
+          "lastName" : "Test 6",
+          "emailAddress" : "hotelRep_1@gmail.com",
+          "status" : { "value" : "ACTIVE" }
+        }
+      ]
+    },
+    {
+      "name": "Bid",
+      "documents": [
+        {
+          "_id" : { "ObjectId" : "5a0c8569bb832a2128f29001" },
+          "supplier" : {
+            "contact" : {
+              "id" : { "ObjectId" : "5a4508dabb832a2258950000" },
+              "firstName" : "Less Recent Duplicate (by _id)",
+              "lastName" : "Test 1",
+              "emailAddress" : "chainContact_1@gmail.com",
+              "company" : {
+                "entityId" : { "ObjectId" : "56014c0a9537801174120001" },
+                "accountId" : { "ObjectId" : "59b152fbbb832a069cd20001" },
+                "name" : "CHAIN 1",
+                "type" : "CHAIN"
+              },
+              "isUser" : false
+            }
+          },
+          "state" : { "status" : "SENT" }
+        },
+        {
+          "_id" : { "ObjectId" : "5a0c8569bb832a2128f29002" },
+          "supplier" : {
+            "contact" : {
+              "id" : { "ObjectId" : "5a4508dabb832a2258950001" },
+              "firstName" : "Chain Contact 1",
+              "lastName" : "Test 2",
+              "emailAddress" : "chainContact_1@gmail.com",
+              "phone": "1234567",
+              "profilePicture": "picture.jpg",
+              "jobTitle": "Bid Contact",
+              "company" : {
+                "entityId" : { "ObjectId" : "56014c0a9537801174120001" },
+                "accountId" : { "ObjectId" : "59b152fbbb832a069cd20001" },
+                "name" : "CHAIN 1",
+                "type" : "CHAIN"
+              },
+              "isUser" : false
+            }
+          },
+          "state" : { "status" : "SENT" }
+        },
+        {
+          "_id" : { "ObjectId" : "5a0c8569bb832a2128f29003" },
+          "supplier" : {
+            "contact" : {
+              "id" : { "ObjectId" : "5a4508dabb832a2258950002" },
+              "firstName" : "Chain Contact From Unsent Bid",
+              "lastName" : "Test 3",
+              "emailAddress" : "chainContact_2@gmail.com",
+              "company" : {
+                "entityId" : { "ObjectId" : "56014c0a9537801174120001" },
+                "accountId" : { "ObjectId" : "59b152fbbb832a069cd20001" },
+                "name" : "CHAIN 1",
+                "type" : "CHAIN"
+              },
+              "isUser" : false
+            }
+          },
+          "state" : { "status" : "CREATED" }
+        },
+        {
+          "_id" : { "ObjectId" : "5a0c8569bb832a2128f29004" },
+          "supplier" : {
+            "contact" : {
+              "id" : { "ObjectId" : "5a4508dabb832a2258950003" },
+              "firstName" : "Chain Contact 2",
+              "lastName" : "Test 4",
+              "emailAddress" : "chainContact_2@gmail.com",
+              "company" : {
+                "entityId" : { "ObjectId" : "56014c0a9537801174120001" },
+                "accountId" : { "ObjectId" : "59b152fbbb832a069cd20001" },
+                "name" : "CHAIN 1",
+                "type" : "CHAIN"
+              },
+              "isUser" : false
+            }
+          },
+          "state" : { "status" : "SENT" }
+        },
+        {
+          "_id" : { "ObjectId" : "5a0c8569bb832a2128f29005" },
+          "supplier" : {
+            "contact" : {
+              "id" : { "ObjectId" : "5a4508dabb832a2258950004" },
+              "firstName" : "Not Wanted Chain Contact",
+              "lastName" : "Test 5",
+              "emailAddress" : "otherChainContact_1@gmail.com",
+              "company" : {
+                "entityId" : { "ObjectId" : "56014c0a95378011741200ff" },
+                "accountId" : { "ObjectId" : "59b152fbbb832a069cd200ff" },
+                "name" : "CHAIN FF",
+                "type" : "CHAIN"
+              },
+              "isUser" : false
+            }
+          },
+          "state" : { "status" : "SENT" }
+        },
+        {
+          "_id" : { "ObjectId" : "5a0c8569bb832a2128f29006" },
+          "supplier" : {
+            "contact" : {
+              "id" : { "ObjectId" : "5a4508dabb832a2258950005" },
+              "firstName" : "Representative",
+              "lastName" : "Test 6",
+              "emailAddress" : "representative@gmail.com",
+              "company" : {
+                "entityId" : { "ObjectId" : "56014c0a9537801174120001" },
+                "accountId" : { "ObjectId" : "59b152fbbb832a069cd20001" },
+                "name" : "CHAIN 1",
+                "type" : "CHAIN"
+              },
+              "isUser" : true
+            }
+          },
+          "state" : { "status" : "SENT" }
+        },
+        {
+          "_id" : { "ObjectId" : "5a0c8569bb832a2128f29007" },
+          "supplier" : {
+            "contact" : {
+              "id" : { "ObjectId" : "5a4508dabb832a2258950006" },
+              "firstName" : "Hotel Contact",
+              "lastName" : "Test 7",
+              "emailAddress" : "hotelContact_1@gmail.com",
+              "company" : {
+                "entityId" : { "ObjectId" : "56014c0a9537801174120011" },
+                "accountId" : { "ObjectId" : "59b152fbbb832a069cd20011" },
+                "name" : "Hotel 1",
+                "type" : "HOTEL"
+              },
+              "isUser" : false
+            }
+          },
+          "state" : { "status" : "SENT" }
+        },
+        {
+          "_id" : { "ObjectId" : "5a0c8569bb832a2128f29008" },
+          "supplier" : {
+            "contact" : {
+              "id" : { "ObjectId" : "5a4508dabb832a2258950007" },
+              "firstName" : "Chain Contact with same email address as Hotel Contact",
+              "lastName" : "Test 8",
+              "emailAddress" : "hotelContact_1@gmail.com",
+              "company" : {
+                "entityId" : { "ObjectId" : "56014c0a9537801174120001" },
+                "accountId" : { "ObjectId" : "59b152fbbb832a069cd20001" },
+                "name" : "Chain 1",
+                "type" : "CHAIN"
+              },
+              "isUser" : false
+            }
+          },
+          "state" : { "status" : "SENT" }
+        }
+      ]
+    }
+  ]
+}

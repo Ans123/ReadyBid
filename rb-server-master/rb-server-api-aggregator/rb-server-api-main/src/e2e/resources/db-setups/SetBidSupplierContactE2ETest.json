@@ -1,0 +1,165 @@
+{
+  "collections": [
+    {
+      "name": "UserAccount",
+      "documents":[
+        {},
+        {
+          "_id" : { "ObjectId" : "5a311464bb832a1ed806a000" },
+          "userId" : { "ObjectId" : "59ad5164bb832a251cde1000" },
+          "accountId" : { "ObjectId" : "5a311464bb832a1ed806a000" },
+          "jobTitle" : "hotel rep",
+          "created" : {},
+          "status" : {
+            "value" : "UNVERIFIED"
+          }
+        },
+        {
+          "_id" : { "ObjectId" : "5a311464bb832a1ed806a010" },
+          "userId" : { "ObjectId" : "59ad5164bb832a251cde1000" },
+          "accountId" : { "ObjectId" : "5a311464bb832a1ed806a010" },
+          "jobTitle" : "chain rep",
+          "created" : {},
+          "status" : {
+            "value" : "UNVERIFIED"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Account",
+      "documents": [
+        {},
+        {
+          "_id" : { "ObjectId" : "5a311464bb832a1ed806a000" },
+          "entityId" : { "ObjectId" : "56014c0a9537801174122000" },
+          "type" : "HOTEL",
+          "name" : "HOTEL NAME",
+          "phone" : "18189977000",
+          "website" : "http://hotel.com",
+          "emailAddress" : "hotel@hotel.com",
+          "logo" : "hotel.jpg",
+          "status" : {
+            "value" : "UNVERIFIED"
+          },
+          "location": {
+            "address" : {
+              "address1" : "A ADDRESS 1",
+              "address2" : "A ADDRESS 2",
+              "city" : "A CITY",
+              "region" : "A REGION",
+              "zip" : "A ZIP CODE",
+              "country" : "RS"
+            },
+            "fullAddress" : "A FULL ADDRESS",
+            "coordinates" : {
+              "lat" : 100,
+              "lng" : 100
+            }
+          }
+        },
+        {
+          "_id" : { "ObjectId" : "5a311464bb832a1ed806a010" },
+          "entityId" : { "ObjectId" : "56014c0a9537801174122010" },
+          "type" : "CHAIN",
+          "name" : "CHAIN NAME",
+          "phone" : "18189977000",
+          "website" : "http://chain.com",
+          "emailAddress" : "chain@chain.com",
+          "logo" : "chain.jpg",
+          "status" : {
+            "value" : "UNVERIFIED"
+          },
+          "location": {
+            "address" : {
+              "address1" : "A ADDRESS 1",
+              "address2" : "A ADDRESS 2",
+              "city" : "A CITY",
+              "region" : "A REGION",
+              "zip" : "A ZIP CODE",
+              "country" : "RS"
+            },
+            "fullAddress" : "A FULL ADDRESS",
+            "coordinates" : {
+              "lat" : 100,
+              "lng" : 100
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "User",
+      "documents": [
+        {},
+        {
+          "_id" : { "ObjectId" : "59ad5164bb832a251cde1000" },
+          "firstName" : "UserFirst",
+          "lastName" : "UserLast",
+          "emailAddress" : "user@gmail.com",
+          "phone": "12345",
+          "profilePicture": "picture.jpg",
+          "userAccounts" : [
+            { "ObjectId" : "5a311464bb832a1ed806a000" },
+            { "ObjectId" : "5a311464bb832a1ed806a010" }
+          ],
+          "status" : { "value" : "ACTIVE" }
+        }
+      ]
+    },
+    {
+      "name": "Bid",
+      "documents": [
+        {},
+        {
+          "description": "Created Bid without supplier contact",
+          "_id": { "ObjectId": "5a0c8569bb832a2128f20000" },
+          "rfp": { "_id": { "ObjectId": "4a0c8569bb832a2128f20000" } },
+          "buyer": { "company": { "accountId": { "ObjectId": "59df7063bb832a05ecde0001" } } },
+          "supplier": {
+            "company": {
+              "entityId": { "ObjectId": "56014c0a9537801174122000"},
+              "chain": { "master": { "_id": { "ObjectId": "56014c0a9537801174122010"} } }
+            }
+          },
+          "state": { "status": "CREATED" }
+        },
+        {
+          "description": "Created Bid with supplier contact",
+          "_id": { "ObjectId": "5a0c8569bb832a2128f20010" },
+          "rfp": { "_id": { "ObjectId": "4a0c8569bb832a2128f20000" } },
+          "buyer": { "company": { "accountId": { "ObjectId": "59df7063bb832a05ecde0001" } } },
+          "supplier": {
+            "company": { "entityId": { "ObjectId": "56014c0a9537801174122000"} },
+            "contact": { "id": { "ObjectId": "59b152fbbb832a069cd20001"} }
+          },
+          "state": { "status": "CREATED" }
+        },
+        {
+          "description": "Deleted Bid without supplier contact",
+          "_id": { "ObjectId": "5a0c8569bb832a2128f20020" },
+          "rfp": { "_id": { "ObjectId": "4a0c8569bb832a2128f20000" } },
+          "buyer": { "company": { "accountId": { "ObjectId": "59df7063bb832a05ecde0001" } } },
+          "supplier": { "company": { "entityId": { "ObjectId": "56014c0a9537801174122000"} } },
+          "state": { "status": "DELETED" }
+        },
+        {
+          "description": "Bid with changed status and without supplier contact",
+          "_id": { "ObjectId": "5a0c8569bb832a2128f20030" },
+          "rfp": { "_id": { "ObjectId": "4a0c8569bb832a2128f20000" } },
+          "buyer": { "company": { "accountId": { "ObjectId": "59df7063bb832a05ecde0001" } } },
+          "supplier": { "company": { "entityId": { "ObjectId": "56014c0a9537801174122000"} } },
+          "state": { "status": "RESPONDED" }
+        },
+        {
+          "description": "Bid with unmatched supplier.company.entityId",
+          "_id": { "ObjectId": "5a0c8569bb832a2128f20040" },
+          "rfp": { "_id": { "ObjectId": "4a0c8569bb832a2128f20000" } },
+          "buyer": { "company": { "accountId": { "ObjectId": "59df7063bb832a05ecde0001" } } },
+          "supplier": { "company": { "entityId": { "ObjectId": "56014c0a9537801174122001"} } },
+          "state": { "status": "CREATED" }
+        }
+      ]
+    }
+  ]
+}

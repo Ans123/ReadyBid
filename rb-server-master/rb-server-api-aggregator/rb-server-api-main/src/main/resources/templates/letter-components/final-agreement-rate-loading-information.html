@@ -1,0 +1,24 @@
+<table class="final-agreement rate-loading">
+    <thead>
+    <tr>
+        <th colspan="4">Rate Loading Information</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="heading">
+        <td>ARC/IATA#s</td>
+        <td>Pseudo City Code</td>
+        <td>GDS Name</td>
+        <td>Rate Access Code</td>
+    </tr>
+    <tr th:each="info : ${list}">
+        <td th:text="${info.arcIatas}">67544842</td>
+        <td th:text="${info.pseudoCityCode}">67544842</td>
+        <td th:text="${info.gdsName}">67544842</td>
+        <td th:text="${info.rateAccessCode}">67544842</td>
+    </tr>
+    <tr th:if="${#lists.isEmpty(list)}">
+        <td colspan="4">Not Available</td>
+    </tr>
+    </tbody>
+</table>

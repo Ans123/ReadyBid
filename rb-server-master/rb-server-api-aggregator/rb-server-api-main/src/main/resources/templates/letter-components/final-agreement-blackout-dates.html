@@ -1,0 +1,12 @@
+<table class="final-agreement blackout-dates">
+    <thead>
+    <tr>
+        <th th:colspan="${#lists.size(periods)}">Blackout Dates</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td th:each="period : ${periods}"><i class="fa fa-calendar"></i> <strong th:text="${period}"></strong></td>
+    </tr>
+    </tbody>
+</table>

@@ -1,0 +1,3516 @@
+{
+  "collections": [
+    {
+      "name": "Bid",
+      "documents": [
+        {},
+        {
+          "_id" : { "ObjectId" : "5a672dc09f4c2f50b876876e" },
+          "rfp" : {
+            "_id" : { "ObjectId" : "5a66c07c9f4c2f50b876876a" },
+            "specifications" : {
+              "name" : "Tilley Pressure Test 2019 HOTEL RFP",
+              "type" : "HOTEL",
+              "dueDate" : "2018-03-09",
+              "programStartDate" : "2019-01-01",
+              "programEndDate" : "2019-12-31",
+              "programYear" : 2019,
+              "buyer" : {
+                "company" : {
+                  "entityId" : { "ObjectId" : "56e597c2bfc40d2dfe0616b3" },
+                  "accountId" : { "ObjectId" : "59ad5184bb832a27e8d38ff1" },
+                  "name" : "Tilley Pressure Test",
+                  "type" : "COMPANY",
+                  "industry" : "ENERGY"
+                },
+                "contact" : {
+                  "id" : { "ObjectId" : "59ad5184bb832a27e8d38ff2" },
+                  "firstName" : "dejan",
+                  "lastName" : "kosijer",
+                  "fullName" : "dejan kosijer",
+                  "emailAddress" : "real.deka@gmail.com",
+                  "phone" : "+381691413978",
+                  "jobTitle" : "Test",
+                  "company" : {
+                    "entityId" : { "ObjectId" : "56e597c2bfc40d2dfe0616b3" },
+                    "accountId" : { "ObjectId" : "59ad5184bb832a27e8d38ff1" },
+                    "name" : "Tilley Pressure Test",
+                    "type" : "COMPANY",
+                    "industry" : "ENERGY"
+                  },
+                  "isUser" : true
+                }
+              }
+            },
+            "coverLetter" : "<table style=\"width:100%\"><tbody><tr><td>{{buyer.contact.company.logo}}</td><td style=\"text-align:right\"><strong>RFP Due Date</strong><br />{{rfp.dueDate}}</td></tr></tbody></table><p style=\"text-align:justify\">{{supplier.contact.fullName}}<br />{{supplier.contact.company.name}}<br />{{supplier.contact.company.address.fullAddress}}</p><p style=\"text-align:right\">{{rfp.sentDate}}</p><p style=\"text-align:justify\">Dear {{supplier.contact.firstName}},</p><p style=\"text-align:justify\">{{buyer.contact.company.name}} is pleased to announce that you have been selected for inclusion in our {{rfp.programYear}} Hotel bidding and selection process.</p><p style=\"text-align:justify\">{{supplier.contact.firstName}}, because of the amount of travel spend {{buyer.company.name}} has in your hotel and city, we are inviting you to submit a rate and amenity package for our consideration. If accepted, your hotel will be one of a carefully chosen number of properties that will be included in our hotel program. Supporting {{buyer.company.name}} corporate travel policy, employee travelers will be utilizing an on-line booking tool that filters for only preferred vendors and contracts. An incorrect number will exclude your hotel from the preferred listing that employees will be selecting from for reservations.</p><p style=\"text-align:justify\">Your submission will be evaluated on the following criteria:</p><div><ul><li style=\"text-align:justify\">Rate should be a minimum of 15% below published corporate rate or at least 10% below the Consortia Rate.</li><li style=\"text-align:justify\">Rate should be competitive with those offered to other corporate accounts with similar spending potential</li><li style=\"text-align:justify\">Rate will be net, non-commissionable.</li><li style=\"text-align:justify\">Rate is run-of-the-house with last room availability (excluding suites, concierge, club and tower rooms).</li></ul></div><p style=\"text-align:justify\">There are three value-added amenities that will assist your bid greatly:</p><div style=\"text-align:justify\"><ul><li>Complimentary Breakfast (continental, full or buffet)</li><li>Waiver of telephone access fees for local, long-distance and toll free calls;</li><li>Waiver of wireless or broadband cable internet fees.</li></ul></div><p style=\"text-align:justify\">There are two other requirements that {{buyer.company.name}} has mandated.</p><div style=\"text-align:justify\"><ul><li>Selected hotels must agree to provide monthly room night volume reports. An electronic form will be sent at the end of each month for you to complete.</li><li>Selected hotel rates will be audited to assure compliance to contracted rates. Selected hotels must agree to pay the difference when disparities occur. <strong>As an example:</strong> If your hotels contracted rate for {{buyer.company.name}} is $145.00 and the audit shows a booking at $185.00 (when hotel had availability), hotel agrees to pay the difference.</li></ul></div><p style=\"text-align:justify\">To assist you in determining the {{rfp.programYear}} {{buyer.company.name}} Rate, be sure to consider the attached room night volumes by city during the period of {{rfp.programStartDate}} through {{rfp.programEndDate}}.</p><p style=\"text-align:justify\">Please complete the following hotel questionnaire and should you have any questions regarding our RFP, please contact (3rd party) at the phone number listed above.</p><p style=\"text-align:justify\">We are confident that {{rfp.programYear}} will be a most successful year for both our program and our valued hotel partners. We respectfully await your reply and look forward to the opportunity to work with your hotel in {{rfp.programYear}} .</p><p>Sincerely,<br />{{buyer.contact.fullName}}  <br />{{buyer.contact.jobTitle}} <br />{{buyer.contact.company.name}} <br />{{buyer.contact.email}} <br />{{buyer.contact.phone}} </p>",
+            "questionnaire" : {
+              "type" : "HOTEL",
+              "model" : {
+                "cells" : [
+                  {
+                    "ord" : 1,
+                    "cells" : [
+                      {
+                        "ord" : 1,
+                        "cells" : [
+                          {
+                            "ord" : 1,
+                            "id" : "PROPCODE"
+                          },
+                          {
+                            "ord" : 2,
+                            "id" : "INTERNALHOTELCODE"
+                          },
+                          {
+                            "ord" : 3,
+                            "id" : "PROPNAME"
+                          },
+                          {
+                            "ord" : 4,
+                            "id" : "PROPADD1"
+                          },
+                          {
+                            "ord" : 5,
+                            "id" : "PROPADD2"
+                          },
+                          {
+                            "ord" : 6,
+                            "id" : "PROPCITY"
+                          },
+                          {
+                            "ord" : 7,
+                            "id" : "PROPSTATEPROV"
+                          },
+                          {
+                            "ord" : 8,
+                            "id" : "PROPCOUNTY"
+                          },
+                          {
+                            "ord" : 9,
+                            "id" : "PROPREGION"
+                          },
+                          {
+                            "ord" : 10,
+                            "id" : "PROPCOUNTRY"
+                          },
+                          {
+                            "ord" : 11,
+                            "id" : "PROPPOSTCODE"
+                          },
+                          {
+                            "ord" : 12,
+                            "id" : "MAINPHONECOUNTRY"
+                          },
+                          {
+                            "ord" : 13,
+                            "id" : "MAINPHONECITY"
+                          },
+                          {
+                            "ord" : 14,
+                            "id" : "MAINPHONE"
+                          },
+                          {
+                            "ord" : 15,
+                            "id" : "MAINFAXCOUNTRY"
+                          },
+                          {
+                            "ord" : 16,
+                            "id" : "MAINFAXCITY"
+                          },
+                          {
+                            "ord" : 17,
+                            "id" : "MAINFAX"
+                          },
+                          {
+                            "ord" : 18,
+                            "id" : "UNITOFMEAS"
+                          },
+                          {
+                            "ord" : 19,
+                            "id" : "PROPURL"
+                          },
+                          {
+                            "ord" : 20,
+                            "id" : "PROPSALESGENREMAIL"
+                          }
+                        ],
+                        "id" : "PLC"
+                      },
+                      {
+                        "ord" : 2,
+                        "cells" : [
+                          {
+                            "ord" : 21,
+                            "id" : "FULL_OR_LIM"
+                          },
+                          {
+                            "ord" : 22,
+                            "id" : "ES_STAY"
+                          },
+                          {
+                            "ord" : 23,
+                            "id" : "MKT_TIER"
+                          },
+                          {
+                            "ord" : 24,
+                            "id" : "YRBUILT"
+                          },
+                          {
+                            "ord" : 25,
+                            "id" : "LASTREN"
+                          },
+                          {
+                            "ord" : 26,
+                            "id" : "NUMROOMS"
+                          },
+                          {
+                            "ord" : 27,
+                            "id" : "NUMNOSMK"
+                          },
+                          {
+                            "ord" : 28,
+                            "id" : "NUMFLRS"
+                          },
+                          {
+                            "ord" : 29,
+                            "id" : "MGMTCOMPANY"
+                          },
+                          {
+                            "ord" : 30,
+                            "id" : "OWNERCOMPANY"
+                          },
+                          {
+                            "ord" : 31,
+                            "id" : "PROPOVERVIEW"
+                          },
+                          {
+                            "ord" : 32,
+                            "id" : "PROP_LOC"
+                          },
+                          {
+                            "ord" : 33,
+                            "id" : "AIRCITYCODE"
+                          },
+                          {
+                            "ord" : 34,
+                            "id" : "AIR1CODE"
+                          }
+                        ],
+                        "id" : "PO"
+                      },
+                      {
+                        "ord" : 3,
+                        "cells" : [
+                          {
+                            "ord" : 35,
+                            "id" : "DISABCOMPLY"
+                          },
+                          {
+                            "ord" : 36,
+                            "id" : "DISABACCSS"
+                          },
+                          {
+                            "ord" : 37,
+                            "id" : "NUMDISABL"
+                          },
+                          {
+                            "ord" : 38,
+                            "id" : "HAND_PARK"
+                          }
+                        ],
+                        "id" : "FPPD"
+                      },
+                      {
+                        "ord" : 4,
+                        "cells" : [
+                          {
+                            "ord" : 39,
+                            "id" : "REST_ONSITE"
+                          },
+                          {
+                            "ord" : 40,
+                            "id" : "RM_SRV_AVL"
+                          },
+                          {
+                            "ord" : 41,
+                            "id" : "RM_SRV_HRS"
+                          },
+                          {
+                            "ord" : 42,
+                            "id" : "CONVENENCE_FOOD"
+                          },
+                          {
+                            "ord" : 43,
+                            "id" : "BUS_CENTER"
+                          },
+                          {
+                            "ord" : 44,
+                            "id" : "FRNT_DESK"
+                          },
+                          {
+                            "ord" : 45,
+                            "id" : "AIR_CONDITIONED"
+                          },
+                          {
+                            "ord" : 46,
+                            "id" : "PRIVATE_BATHSA"
+                          }
+                        ],
+                        "id" : "SA"
+                      },
+                      {
+                        "ord" : 5,
+                        "cells" : [
+                          {
+                            "ord" : 47,
+                            "id" : "AMEXCARD"
+                          },
+                          {
+                            "ord" : 48,
+                            "id" : "DINERSCARD"
+                          },
+                          {
+                            "ord" : 49,
+                            "id" : "DISCOVERCARD"
+                          },
+                          {
+                            "ord" : 50,
+                            "id" : "JCBCARD"
+                          },
+                          {
+                            "ord" : 51,
+                            "id" : "MASTERCARD"
+                          },
+                          {
+                            "ord" : 52,
+                            "id" : "VISACARD"
+                          }
+                        ],
+                        "id" : "CCA"
+                      },
+                      {
+                        "ord" : 6,
+                        "cells" : [
+                          {
+                            "ord" : 53,
+                            "id" : "AMADEUS_CHAINCODE"
+                          },
+                          {
+                            "ord" : 54,
+                            "id" : "AMADEUS_PROPCODE"
+                          },
+                          {
+                            "ord" : 55,
+                            "id" : "APOLLO_CHAINCODE"
+                          },
+                          {
+                            "ord" : 56,
+                            "id" : "APOLLO_PROPCODE"
+                          },
+                          {
+                            "ord" : 57,
+                            "id" : "SABRE_CHAINCODE"
+                          },
+                          {
+                            "ord" : 58,
+                            "id" : "SABRE_PROPCODE"
+                          },
+                          {
+                            "ord" : 59,
+                            "id" : "WORLDSPAN_CHAINCODE"
+                          },
+                          {
+                            "ord" : 60,
+                            "id" : "WRLDSPAN_PROPCODE"
+                          },
+                          {
+                            "ord" : 61,
+                            "id" : "MASTERCHAINCODE"
+                          }
+                        ],
+                        "id" : "PGDSCPC"
+                      }
+                    ],
+                    "id" : "PB"
+                  },
+                  {
+                    "ord" : 2,
+                    "cells" : [
+                      {
+                        "ord" : 1,
+                        "cells" : [
+                          {
+                            "ord" : 62,
+                            "id" : "CLIENT_NAME"
+                          },
+                          {
+                            "ord" : 63,
+                            "id" : "RM_NIGHTS"
+                          },
+                          {
+                            "ord" : 64,
+                            "id" : "RATE_CURR"
+                          }
+                        ],
+                        "id" : "RBO"
+                      },
+                      {
+                        "ord" : 2,
+                        "cells" : [
+                          {
+                            "ord" : 65,
+                            "id" : "DYNAMIC_PRICING"
+                          },
+                          {
+                            "ord" : 66,
+                            "id" : "DYNAMIC_PCT_Discount"
+                          }
+                        ],
+                        "id" : "DP"
+                      },
+                      {
+                        "ord" : 3,
+                        "id" : "RTG"
+                      },
+                      {
+                        "ord" : 5,
+                        "cells" : [
+                          {
+                            "ord" : 173,
+                            "id" : "COMMISSIONABLE"
+                          },
+                          {
+                            "ord" : 174,
+                            "id" : "COMM_PCT_CLIENT"
+                          },
+                          {
+                            "ord" : 175,
+                            "id" : "LOAD_GDS"
+                          }
+                        ],
+                        "id" : "RT2"
+                      },
+                      {
+                        "ord" : 6,
+                        "cells" : [
+                          {
+                            "ord" : 176,
+                            "id" : "WALK_HOTEL"
+                          },
+                          {
+                            "ord" : 177,
+                            "id" : "WALK_TAX"
+                          },
+                          {
+                            "ord" : 178,
+                            "id" : "WALK_TRANS"
+                          },
+                          {
+                            "ord" : 179,
+                            "id" : "WALK_CALL"
+                          }
+                        ],
+                        "id" : "OP"
+                      },
+                      {
+                        "id" : "EC",
+                        "ord" : 7.0,
+                        "cells" : [
+                          {
+                            "ord" : 180,
+                            "id" : "CANC_POL"
+                          },
+                          {
+                            "ord" : 181,
+                            "id" : "EARLYCK_FEE"
+                          },
+                          {
+                            "ord" : 182,
+                            "id" : "EARLYCK_UOM"
+                          },
+                          {
+                            "ord" : 183,
+                            "id" : "EARLYCK_INCLUDE"
+                          }
+                        ]
+                      },
+                      {
+                        "id" : "LOT",
+                        "ord" : 8.0,
+                        "cells" : [
+                          {
+                            "ord" : 184,
+                            "id" : "LODGTX_FEE"
+                          },
+                          {
+                            "ord" : 185,
+                            "id" : "LODGTX_UOM"
+                          },
+                          {
+                            "ord" : 186,
+                            "id" : "LODGTX_INCLUDE"
+                          }
+                        ]
+                      },
+                      {
+                        "id" : "STT",
+                        "ord" : 9.0,
+                        "cells" : [
+                          {
+                            "ord" : 187,
+                            "id" : "STATETX_FEE"
+                          },
+                          {
+                            "ord" : 188,
+                            "id" : "STATETX_UOM"
+                          },
+                          {
+                            "ord" : 189,
+                            "id" : "STATETX_INCLUDE"
+                          }
+                        ]
+                      },
+                      {
+                        "id" : "CIT",
+                        "ord" : 10.0,
+                        "cells" : [
+                          {
+                            "ord" : 190,
+                            "id" : "CITYTX_FEE"
+                          },
+                          {
+                            "ord" : 191,
+                            "id" : "CITYTX_UOM"
+                          },
+                          {
+                            "ord" : 192,
+                            "id" : "CITYTX_INCLUDE"
+                          }
+                        ]
+                      },
+                      {
+                        "id" : "VAT",
+                        "ord" : 11.0,
+                        "cells" : [
+                          {
+                            "ord" : 193,
+                            "id" : "VATGSTRM_FEE"
+                          },
+                          {
+                            "ord" : 194,
+                            "id" : "VATGSTRM_UOM"
+                          },
+                          {
+                            "ord" : 195,
+                            "id" : "VATGSTRM_INCLUDE"
+                          }
+                        ]
+                      },
+                      {
+                        "id" : "VATFB",
+                        "ord" : 12.0,
+                        "cells" : [
+                          {
+                            "ord" : 196,
+                            "id" : "VATGSTFB_FEE"
+                          },
+                          {
+                            "ord" : 197,
+                            "id" : "VATGSTFB_UOM"
+                          },
+                          {
+                            "ord" : 198,
+                            "id" : "VATGSTFB_INCLUDE"
+                          }
+                        ]
+                      },
+                      {
+                        "id" : "SET",
+                        "ord" : 13.0,
+                        "cells" : [
+                          {
+                            "ord" : 199,
+                            "id" : "SERVICE_FEE"
+                          },
+                          {
+                            "ord" : 200,
+                            "id" : "SERVICE_UOM"
+                          },
+                          {
+                            "ord" : 201,
+                            "id" : "SERVICE_INCLUDE"
+                          }
+                        ]
+                      },
+                      {
+                        "id" : "OCT",
+                        "ord" : 14.0,
+                        "cells" : [
+                          {
+                            "ord" : 202,
+                            "id" : "OCC_FEE"
+                          },
+                          {
+                            "ord" : 203,
+                            "id" : "OCC_UOM"
+                          },
+                          {
+                            "ord" : 204,
+                            "id" : "OCC_INCLUDE"
+                          }
+                        ]
+                      },
+                      {
+                        "id" : "OTT",
+                        "ord" : 15.0,
+                        "cells" : [
+                          {
+                            "ord" : 205,
+                            "id" : "OTHERTX_FEE"
+                          },
+                          {
+                            "ord" : 206,
+                            "id" : "OTHERTX_FEE_UOM"
+                          },
+                          {
+                            "ord" : 207,
+                            "id" : "OTHERTX_FEE_DESC"
+                          },
+                          {
+                            "ord" : 208,
+                            "id" : "OTHERTX_FEE_INCL"
+                          }
+                        ]
+                      },
+                      {
+                        "ord" : 16,
+                        "cells" : [
+                          {
+                            "ord" : 209,
+                            "id" : "PARKATTEND"
+                          },
+                          {
+                            "ord" : 210,
+                            "id" : "PARK_FEE"
+                          },
+                          {
+                            "ord" : 211,
+                            "id" : "PARK_INCLUDE"
+                          }
+                        ],
+                        "id" : "HACP"
+                      },
+                      {
+                        "ord" : 17,
+                        "cells" : [
+                          {
+                            "ord" : 212,
+                            "id" : "BREAK_INCLUDE"
+                          },
+                          {
+                            "ord" : 213,
+                            "id" : "BREAK_FEE"
+                          },
+                          {
+                            "ord" : 214,
+                            "id" : "BREAK_TYPE"
+                          }
+                        ],
+                        "id" : "HACB"
+                      },
+                      {
+                        "ord" : 18,
+                        "cells" : [
+                          {
+                            "ord" : 215,
+                            "id" : "FITON_CENT"
+                          },
+                          {
+                            "ord" : 216,
+                            "id" : "FITNESS_FEE_ON"
+                          },
+                          {
+                            "ord" : 217,
+                            "id" : "FITNESS_INCLUDE_ON"
+                          }
+                        ],
+                        "id" : "HACFC"
+                      },
+                      {
+                        "ord" : 19,
+                        "cells" : [
+                          {
+                            "ord" : 218,
+                            "id" : "LOCAL_PHONE_INCLUDE"
+                          }
+                        ],
+                        "id" : "HACLPC"
+                      },
+                      {
+                        "ord" : 20,
+                        "cells" : [
+                          {
+                            "ord" : 219,
+                            "id" : "TOLL_CARD_CALL_INCLUDE"
+                          }
+                        ],
+                        "id" : "HACTFCCC"
+                      },
+                      {
+                        "ord" : 21,
+                        "cells" : [
+                          {
+                            "ord" : 220,
+                            "id" : "HIGHSPEED_INROOM"
+                          },
+                          {
+                            "ord" : 221,
+                            "id" : "HIGHSPEED_INROOM_NUM"
+                          },
+                          {
+                            "ord" : 222,
+                            "id" : "HSIA_FEE"
+                          },
+                          {
+                            "ord" : 223,
+                            "id" : "HSIA_INCLUDE"
+                          }
+                        ],
+                        "id" : "HACWHSI"
+                      },
+                      {
+                        "ord" : 22,
+                        "cells" : [
+                          {
+                            "ord" : 224,
+                            "id" : "WIRELESS"
+                          },
+                          {
+                            "ord" : 225,
+                            "id" : "WIRELESS_NUM"
+                          },
+                          {
+                            "ord" : 226,
+                            "id" : "WIRELESS_FEE"
+                          },
+                          {
+                            "ord" : 227,
+                            "id" : "WIRELESS_INCLUDE"
+                          }
+                        ],
+                        "id" : "HACWSHSI"
+                      },
+                      {
+                        "ord" : 23,
+                        "cells" : [
+                          {
+                            "ord" : 228,
+                            "id" : "AIRTRANS_FEE"
+                          },
+                          {
+                            "ord" : 229,
+                            "id" : "AIRTRANS_INCLUDE"
+                          },
+                          {
+                            "ord" : 230,
+                            "id" : "AIRTRANS_DESCRIBE"
+                          }
+                        ],
+                        "id" : "HACTTFA"
+                      },
+                      {
+                        "ord" : 24,
+                        "cells" : [
+                          {
+                            "ord" : 231,
+                            "id" : "OFFTRANS_INCLUDE"
+                          }
+                        ],
+                        "id" : "HACTTFLO"
+                      },
+                      {
+                        "ord" : 25,
+                        "cells" : [
+                          {
+                            "ord" : 232,
+                            "id" : "RATE_SUBS"
+                          },
+                          {
+                            "ord" : 233,
+                            "id" : "RATE_PERSO"
+                          },
+                          {
+                            "ord" : 234,
+                            "id" : "RATE_CONSU"
+                          },
+                          {
+                            "ord" : 235,
+                            "id" : "RATE_RETIR"
+                          },
+                          {
+                            "ord" : 236,
+                            "id" : "RFP_CONTRACT"
+                          }
+                        ],
+                        "id" : "CNRAT"
+                      },
+                      {
+                        "ord" : 26,
+                        "cells" : [
+                          {
+                            "ord" : 237,
+                            "id" : "RFP_NAME"
+                          },
+                          {
+                            "ord" : 238,
+                            "id" : "RFP_TITLE"
+                          },
+                          {
+                            "ord" : 239,
+                            "id" : "RFP_PHONECOUNTRYCODE"
+                          },
+                          {
+                            "ord" : 240,
+                            "id" : "RFP_PHONECITYCODE"
+                          },
+                          {
+                            "ord" : 241,
+                            "id" : "RFP_PHONE"
+                          },
+                          {
+                            "ord" : 242,
+                            "id" : "RFP_EMAIL"
+                          },
+                          {
+                            "ord" : 243,
+                            "id" : "RFP_DATESUBMIT"
+                          }
+                        ],
+                        "id" : "CIRRRFP"
+                      },
+                      {
+                        "ord" : 27,
+                        "cells" : [
+                          {
+                            "ord" : 244,
+                            "name" : "Test 123",
+                            "description" : "Test 123 tooltip",
+                            "id" : "USERDEFINED1",
+                            "validations" : {
+                              "max" : 100
+                            },
+                            "type" : "TEXT"
+                          },
+                          {
+                            "ord" : 245,
+                            "name" : "Test Number",
+                            "description" : "123 ",
+                            "id" : "USERDEFINED2",
+                            "validations" : {
+                              "min" : "0",
+                              "max" : 100,
+                              "after" : "",
+                              "decimal" : "0"
+                            },
+                            "type" : "NUMBER"
+                          },
+                          {
+                            "ord" : 251,
+                            "name" : "123",
+                            "description" : "123",
+                            "id" : "USERDEFINED8",
+                            "validations" : {
+                              "max" : 100
+                            },
+                            "type" : "TEXT"
+                          }
+                        ],
+                        "id" : "CUD"
+                      }
+                    ],
+                    "id" : "CS"
+                  },
+                  {
+                    "ord" : 3,
+                    "cells" : [
+                      {
+                        "ord" : 1,
+                        "cells" : [
+                          {
+                            "ord" : 274,
+                            "id" : "IN_SAFE"
+                          },
+                          {
+                            "ord" : 275,
+                            "id" : "LAPTOP_SAFE"
+                          }
+                        ],
+                        "id" : "IRS"
+                      },
+                      {
+                        "ord" : 2,
+                        "cells" : [
+                          {
+                            "ord" : 276,
+                            "id" : "ROOMSMKDET"
+                          },
+                          {
+                            "ord" : 277,
+                            "id" : "HALLSMKDET"
+                          },
+                          {
+                            "ord" : 278,
+                            "id" : "PUBSMKDET"
+                          },
+                          {
+                            "ord" : 279,
+                            "id" : "HRDWIREDET"
+                          },
+                          {
+                            "ord" : 280,
+                            "id" : "FIRE_EXTIN"
+                          },
+                          {
+                            "ord" : 281,
+                            "id" : "EMRGCYLITE"
+                          },
+                          {
+                            "ord" : 282,
+                            "id" : "VENT_STAIR"
+                          },
+                          {
+                            "ord" : 283,
+                            "id" : "EVACPLAN"
+                          },
+                          {
+                            "ord" : 284,
+                            "id" : "FIRELAWS"
+                          },
+                          {
+                            "ord" : 285,
+                            "id" : "VIS_ALARM"
+                          },
+                          {
+                            "ord" : 286,
+                            "id" : "HALLVIS_ALARM"
+                          },
+                          {
+                            "ord" : 287,
+                            "id" : "PUBVIS_ALARM"
+                          },
+                          {
+                            "ord" : 288,
+                            "id" : "AUD_ALARM"
+                          },
+                          {
+                            "ord" : 289,
+                            "id" : "HALLAUD_ALARM"
+                          },
+                          {
+                            "ord" : 290,
+                            "id" : "PUBAUD_ALARM"
+                          },
+                          {
+                            "ord" : 291,
+                            "id" : "ROOMSPRINK"
+                          },
+                          {
+                            "ord" : 292,
+                            "id" : "HALLSPRINK"
+                          },
+                          {
+                            "ord" : 293,
+                            "id" : "PUBSPRINK"
+                          },
+                          {
+                            "ord" : 294,
+                            "id" : "EMRGCYINFO"
+                          },
+                          {
+                            "ord" : 295,
+                            "id" : "FIRE_LINK"
+                          },
+                          {
+                            "ord" : 296,
+                            "id" : "MULT_EXITS"
+                          },
+                          {
+                            "ord" : 297,
+                            "id" : "AUTO_RECAL"
+                          }
+                        ],
+                        "id" : "FS"
+                      },
+                      {
+                        "ord" : 3,
+                        "cells" : [
+                          {
+                            "ord" : 298,
+                            "id" : "SECURITY"
+                          },
+                          {
+                            "ord" : 299,
+                            "id" : "SECUR_HRS"
+                          },
+                          {
+                            "ord" : 300,
+                            "id" : "DEADBOLTS"
+                          },
+                          {
+                            "ord" : 301,
+                            "id" : "INT_ACCESS"
+                          },
+                          {
+                            "ord" : 302,
+                            "id" : "DOORS_CLOSE"
+                          },
+                          {
+                            "ord" : 303,
+                            "id" : "OPEN_WINDOWS"
+                          },
+                          {
+                            "ord" : 304,
+                            "id" : "PUBADDRESS"
+                          },
+                          {
+                            "ord" : 305,
+                            "id" : "SAFE_CODES"
+                          },
+                          {
+                            "ord" : 306,
+                            "id" : "PARKGATES"
+                          },
+                          {
+                            "ord" : 307,
+                            "id" : "PARKPATROL"
+                          },
+                          {
+                            "ord" : 308,
+                            "id" : "PARKLIGHTS"
+                          },
+                          {
+                            "ord" : 309,
+                            "id" : "PUBCAMERA"
+                          },
+                          {
+                            "ord" : 310,
+                            "id" : "PARK_FR_ENT"
+                          },
+                          {
+                            "ord" : 311,
+                            "id" : "PARK_CAMERA"
+                          },
+                          {
+                            "ord" : 312,
+                            "id" : "CAMERA_REC_24HR"
+                          },
+                          {
+                            "ord" : 313,
+                            "id" : "CAMERA_MONT_24HR"
+                          },
+                          {
+                            "ord" : 314,
+                            "id" : "VIEWPORTS"
+                          },
+                          {
+                            "ord" : 315,
+                            "id" : "BACK_UP"
+                          },
+                          {
+                            "ord" : 316,
+                            "id" : "EXT_DOOR_KEY_ACCESS"
+                          },
+                          {
+                            "ord" : 317,
+                            "id" : "STAFF_AID"
+                          },
+                          {
+                            "ord" : 318,
+                            "id" : "STAFF_CPR_TRAIN"
+                          },
+                          {
+                            "ord" : 319,
+                            "id" : "STAFF_CPR_CERT"
+                          },
+                          {
+                            "ord" : 320,
+                            "id" : "AED_ONSITE"
+                          },
+                          {
+                            "ord" : 321,
+                            "id" : "STAFF_AED"
+                          },
+                          {
+                            "ord" : 322,
+                            "id" : "KEY_ID"
+                          },
+                          {
+                            "ord" : 323,
+                            "id" : "KEY_ELEVATOR"
+                          },
+                          {
+                            "ord" : 324,
+                            "id" : "KEY_PUBLIC"
+                          }
+                        ],
+                        "id" : "PS"
+                      }
+                    ],
+                    "id" : "SS"
+                  },
+                  {
+                    "ord" : 4,
+                    "cells" : [
+                      {
+                        "ord" : 1,
+                        "cells" : [
+                          {
+                            "ord" : 325,
+                            "id" : "LASTROOMAVAIL_BD"
+                          }
+                        ],
+                        "id" : "BFD"
+                      },
+                      {
+                        "ord" : 2,
+                        "id" : "BFDT"
+                      }
+                    ],
+                    "id" : "BD"
+                  },
+                  {
+                    "ord" : 5,
+                    "cells" : [
+                      {
+                        "ord" : 1,
+                        "cells" : [
+                          {
+                            "ord" : 416,
+                            "id" : "GROCERY_SVC"
+                          },
+                          {
+                            "ord" : 417,
+                            "id" : "STORAGE"
+                          },
+                          {
+                            "ord" : 418,
+                            "id" : "STORAGE_FEE"
+                          },
+                          {
+                            "ord" : 419,
+                            "id" : "LAUN_DRY"
+                          },
+                          {
+                            "ord" : 420,
+                            "id" : "LAUNDRY_SITE"
+                          },
+                          {
+                            "ord" : 421,
+                            "id" : "MINI_FRIG"
+                          },
+                          {
+                            "ord" : 422,
+                            "id" : "MICRO"
+                          },
+                          {
+                            "ord" : 423,
+                            "id" : "COFF_TEA"
+                          },
+                          {
+                            "ord" : 424,
+                            "id" : "STOVE"
+                          },
+                          {
+                            "ord" : 425,
+                            "id" : "OVEN"
+                          },
+                          {
+                            "ord" : 426,
+                            "id" : "TOASTER"
+                          },
+                          {
+                            "ord" : 427,
+                            "id" : "DINING_WARE"
+                          },
+                          {
+                            "ord" : 428,
+                            "id" : "DISHES"
+                          },
+                          {
+                            "ord" : 429,
+                            "id" : "HOUSEKEEPING"
+                          },
+                          {
+                            "ord" : 430,
+                            "id" : "HOUSE_CHARGE"
+                          }
+                        ],
+                        "id" : "ESSA"
+                      },
+                      {
+                        "ord" : 2,
+                        "cells" : [
+                          {
+                            "ord" : 431,
+                            "id" : "LOS2MIN_ES"
+                          },
+                          {
+                            "ord" : 432,
+                            "id" : "LOS2MAX_ES"
+                          },
+                          {
+                            "ord" : 433,
+                            "id" : "LOS3MIN_ES"
+                          },
+                          {
+                            "ord" : 434,
+                            "id" : "LOS3MAX_ES"
+                          },
+                          {
+                            "ord" : 435,
+                            "id" : "LOS4MIN_ES"
+                          },
+                          {
+                            "ord" : 436,
+                            "id" : "LOS4MAX_ES"
+                          }
+                        ],
+                        "id" : "ALOSR"
+                      },
+                      {
+                        "ord" : 3,
+                        "id" : "ESRT"
+                      },
+                      {
+                        "ord" : 4,
+                        "cells" : [
+                          {
+                            "ord" : 627,
+                            "id" : "ADDTL_CHARGE_R1_ES"
+                          },
+                          {
+                            "ord" : 628,
+                            "id" : "ADDTL_CHARGE_R2_ES"
+                          },
+                          {
+                            "ord" : 629,
+                            "id" : "ADDTL_CHARGE_R3_ES"
+                          },
+                          {
+                            "ord" : 630,
+                            "id" : "LOS_OCC_ES"
+                          },
+                          {
+                            "ord" : 631,
+                            "id" : "RATE_NOTES_ES"
+                          },
+                          {
+                            "ord" : 632,
+                            "id" : "ADDL_SVC_ES"
+                          }
+                        ],
+                        "id" : "ADDO2P"
+                      }
+                    ],
+                    "id" : "ES"
+                  },
+                  {
+                    "ord" : 6,
+                    "cells" : [
+                      {
+                        "ord" : 1,
+                        "cells" : [
+                          {
+                            "ord" : 633,
+                            "id" : "GROUPUNITOFMEAS"
+                          },
+                          {
+                            "ord" : 634,
+                            "id" : "MTGSPACE"
+                          },
+                          {
+                            "ord" : 635,
+                            "id" : "MTGROOMS"
+                          },
+                          {
+                            "ord" : 636,
+                            "id" : "LGST_MTGRM"
+                          },
+                          {
+                            "ord" : 637,
+                            "id" : "BOARDROOM"
+                          }
+                        ],
+                        "id" : "GI"
+                      },
+                      {
+                        "ord" : 2,
+                        "cells" : [
+                          {
+                            "ord" : 638,
+                            "id" : "MTG_TAX_AMT"
+                          },
+                          {
+                            "ord" : 639,
+                            "id" : "MTG_TAX_UOM"
+                          },
+                          {
+                            "ord" : 640,
+                            "id" : "MTG_TAX_INCL"
+                          },
+                          {
+                            "ord" : 641,
+                            "id" : "MTG_SERVICE_AMT"
+                          },
+                          {
+                            "ord" : 642,
+                            "id" : "MTG_SERVICE_UOM"
+                          },
+                          {
+                            "ord" : 643,
+                            "id" : "MTG_SERVICE_INCL"
+                          }
+                        ],
+                        "id" : "TCADDR"
+                      },
+                      {
+                        "ord" : 3,
+                        "cells" : [
+                          {
+                            "ord" : 644,
+                            "id" : "BREAKOUT_10"
+                          },
+                          {
+                            "ord" : 645,
+                            "id" : "BREAKOUT_25"
+                          }
+                        ],
+                        "id" : "BORC"
+                      },
+                      {
+                        "ord" : 4,
+                        "id" : "GRR"
+                      },
+                      {
+                        "ord" : 5,
+                        "cells" : [
+                          {
+                            "ord" : 656,
+                            "id" : "MTGPKG_FULL_10-50"
+                          },
+                          {
+                            "ord" : 657,
+                            "id" : "MTGPKG_HALF_10-50"
+                          },
+                          {
+                            "ord" : 658,
+                            "id" : "MTGPKG_FULL_51-100"
+                          },
+                          {
+                            "ord" : 659,
+                            "id" : "MTGPKG_HALF_51-100"
+                          }
+                        ],
+                        "id" : "DDR"
+                      },
+                      {
+                        "ord" : 6,
+                        "cells" : [
+                          {
+                            "ord" : 660,
+                            "id" : "PARK_COMP_MTG"
+                          },
+                          {
+                            "ord" : 661,
+                            "id" : "AV_SUPPLIER"
+                          },
+                          {
+                            "ord" : 662,
+                            "id" : "LCD_COST"
+                          },
+                          {
+                            "ord" : 663,
+                            "id" : "LCD_INCL"
+                          },
+                          {
+                            "ord" : 664,
+                            "id" : "SCREEN_COST"
+                          },
+                          {
+                            "ord" : 665,
+                            "id" : "SCREEN_INCL"
+                          },
+                          {
+                            "ord" : 666,
+                            "id" : "HSIA_COST_MTG"
+                          },
+                          {
+                            "ord" : 667,
+                            "id" : "HSIA_INCL_MTG"
+                          }
+                        ],
+                        "id" : "CI"
+                      }
+                    ],
+                    "id" : "GM"
+                  },
+                  {
+                    "ord" : 7,
+                    "cells" : [
+                      {
+                        "ord" : 1,
+                        "cells" : [
+                          {
+                            "ord" : 698,
+                            "id" : "CSR_CERTIFIED"
+                          },
+                          {
+                            "ord" : 699,
+                            "id" : "CSR_CERTIFIED_BY"
+                          },
+                          {
+                            "ord" : 700,
+                            "id" : "CSR_CERTIFIED_AUDIT"
+                          }
+                        ],
+                        "id" : "CERT"
+                      },
+                      {
+                        "ord" : 2,
+                        "cells" : [
+                          {
+                            "ord" : 701,
+                            "id" : "MEAS_CARBON"
+                          },
+                          {
+                            "ord" : 702,
+                            "id" : "MEAS_CARBON_AMT"
+                          },
+                          {
+                            "ord" : 703,
+                            "id" : "MEAS_CARBON_UOM"
+                          },
+                          {
+                            "ord" : 704,
+                            "id" : "MEAS_CARBON_PD"
+                          }
+                        ],
+                        "id" : "CM"
+                      },
+                      {
+                        "ord" : 3,
+                        "cells" : [
+                          {
+                            "ord" : 705,
+                            "id" : "MEAS_WATER_PRN"
+                          },
+                          {
+                            "ord" : 706,
+                            "id" : "MEAS_WATER_AMT"
+                          },
+                          {
+                            "ord" : 707,
+                            "id" : "MEAS_WATER_UOM"
+                          },
+                          {
+                            "ord" : 708,
+                            "id" : "MEAS_WATER_PD"
+                          }
+                        ],
+                        "id" : "WUM"
+                      },
+                      {
+                        "ord" : 4,
+                        "cells" : [
+                          {
+                            "ord" : 709,
+                            "id" : "MEAS_ENERGY"
+                          },
+                          {
+                            "ord" : 710,
+                            "id" : "MEAS_ENERGY_AMT"
+                          },
+                          {
+                            "ord" : 711,
+                            "id" : "MEAS_ENERGY_UOM"
+                          },
+                          {
+                            "ord" : 712,
+                            "id" : "MEAS_ENERGY_PD"
+                          }
+                        ],
+                        "id" : "EIM"
+                      },
+                      {
+                        "ord" : 5,
+                        "cells" : [
+                          {
+                            "ord" : 713,
+                            "id" : "MEAS_WASTE"
+                          },
+                          {
+                            "ord" : 714,
+                            "id" : "MEAS_WASTE_PCT"
+                          },
+                          {
+                            "ord" : 715,
+                            "id" : "MEAS_WASTE_PD"
+                          }
+                        ],
+                        "id" : "WDM"
+                      },
+                      {
+                        "ord" : 6,
+                        "cells" : [
+                          {
+                            "ord" : 716,
+                            "id" : "ENVIRO_CSR"
+                          },
+                          {
+                            "ord" : 717,
+                            "id" : "ENVIRO_CSR_PROGRAM"
+                          }
+                        ],
+                        "id" : "CSRP"
+                      }
+                    ],
+                    "id" : "CSR"
+                  }
+                ],
+                "id" : "root"
+              },
+              "config" : [
+                {
+                  "id" : "RT",
+                  "data" : {
+                    "rate" : [
+                      "LRA",
+                      "NLRA"
+                    ],
+                    "occupancy" : [
+                      "SGL"
+                    ],
+                    "rateRules" : {
+                      "amount" : "0",
+                      "baseRate" : "lastYearRate"
+                    },
+                    "season" : [
+                      1,
+                      2,
+                      3,
+                      4,
+                      5
+                    ],
+                    "roomType" : [
+                      1
+                    ]
+                  }
+                },
+                {
+                  "id" : "BFDT",
+                  "data" : {
+                    "occupancy" : [
+                      "SGL"
+                    ],
+                    "roomType" : [
+                      1
+                    ],
+                    "blackoutDate" : [
+                      1,
+                      2,
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10
+                    ]
+                  }
+                },
+                {
+                  "id" : "ESRT",
+                  "data" : {
+                    "lengthOfStay" : [
+                      2
+                    ],
+                    "rate" : [
+                      "LRA",
+                      "NLRA"
+                    ],
+                    "occupancy" : [
+                      "SGL"
+                    ],
+                    "season" : [
+                      1,
+                      2,
+                      3,
+                      4,
+                      5
+                    ],
+                    "roomType" : [
+                      1
+                    ]
+                  }
+                },
+                {
+                  "id" : "GRR",
+                  "data" : {
+                    "season" : [
+                      1,
+                      2,
+                      3,
+                      4,
+                      5
+                    ]
+                  }
+                }
+              ],
+              "response" : {
+                "answers" : {
+                  "CLIENT_NAME" : "Tilley Pressure Test",
+                  "RATE_CURR" : "USD",
+                  "SEASON1START" : "2019-01-01",
+                  "SEASON1END" : "2019-12-31"
+                },
+                "isAvailable" : false,
+                "state" : [
+                  {
+                    "id" : "RT",
+                    "data" : {
+                      "season" : [
+                        1.0
+                      ],
+                      "roomType" : [
+                        1.0
+                      ]
+                    }
+                  },
+                  {
+                    "id" : "BFDT",
+                    "data" : {
+                      "roomType" : [
+                        1.0
+                      ],
+                      "blackoutDate" : [
+                        1.0
+                      ]
+                    }
+                  },
+                  {
+                    "id" : "ESRT",
+                    "data" : {
+                      "lengthOfStay" : [
+                        2.0
+                      ],
+                      "season" : [
+                        1.0
+                      ],
+                      "roomType" : [
+                        1.0
+                      ]
+                    }
+                  },
+                  {
+                    "id" : "GRR",
+                    "data" : {
+                      "season" : [
+                        1.0
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "finalAgreement" : "<table style=\"width:100%\"><tbody><tr><td>{{buyer.contact.company.logo}}</td><td style=\"text-align:right\">FINAL AGREEMENT SENT ON:<br />{{finalAgreement.date}}</td></tr></tbody></table>\n<p style=\"text-align:justify\">{{supplier.contact.fullName}}<br />{{supplier.contact.company.name}}<br />{{supplier.contact.company.address.fullAddress}}</p>\n<p style=\"text-align:justify\"><strong>Dear </strong>{{supplier.contact.firstName}}<strong>,</strong></p>\n<p>On behalf of {{buyer.company.name}}, I am pleased to inform you that your hotel has been accepted into our {{rfp.name}}.</p>\n<p>These rates, coded as “N” (negotiated), should be loaded under rate code A {{buyer.company.name}} for Sabre, Apollo/Galileo and Amadeus. All designated {{buyer.company.name}} Travel Agencies are attached for your use and review on the page below (Rate Loading Instructions)</p>\n<p>Per your submission, the {{rfp.programYear}} {{buyer.company.name}} rates and amenities will be published as follows:</p>\n<p>{{finalAgreement.rates}}</p>\n<p>In addition to the above rates the following amenities have been agreed to.</p>\n<p>{{finalAgreement.amenities}}</p>\n<p>The blackout dates are listed as follows:</p>\n<p>{{finalAgreement.blackoutDates}}</p>\n<p><strong>Rate Compliance Agreement</strong><br />Pursuant to our initial cover letter for {{rfp.name}} (dated {{rfp.sentDate}}), we anticipate running several rate compliance audits to assure your hotel provides our contracted rate (when availability allows). To that end, please find the necessary rate loading information below.</p>\n<p>{{finalAgreement.rateLoadingInformation}}</p>\n<p>Sincerely,<br />{{buyer.contact.fullName}}<br />{{buyer.contact.jobTitle}}<br />{{buyer.contact.company.name}}<br />{{buyer.contact.email}}<br />{{buyer.contact.phone}}</p>",
+            "created" : {
+              "at" : { "ISODate" : "2018-01-23T04:56:28.977Z" },
+              "by" : {
+                "_id" : { "ObjectId" : "59ad5164bb832a251cde1eaa" },
+                "firstName" : "dejan",
+                "lastName" : "kosijer",
+                "emailAddress" : "real.deka@gmail.com",
+                "phone" : "+381691413978"
+              }
+            },
+            "status" : {
+              "at" : { "ISODate" : "2018-01-23T04:56:28.977Z" },
+              "value" : "CREATED",
+              "by" : {
+                "_id" : { "ObjectId" : "59ad5164bb832a251cde1eaa" },
+                "firstName" : "dejan",
+                "lastName" : "kosijer",
+                "emailAddress" : "real.deka@gmail.com",
+                "phone" : "+381691413978"
+              }
+            }
+          },
+          "questionnaire" : {
+            "type" : "HOTEL",
+            "model" : {
+              "cells" : [
+                {
+                  "ord" : 1,
+                  "cells" : [
+                    {
+                      "ord" : 1,
+                      "cells" : [
+                        {
+                          "ord" : 1,
+                          "id" : "PROPCODE"
+                        },
+                        {
+                          "ord" : 2,
+                          "id" : "INTERNALHOTELCODE"
+                        },
+                        {
+                          "ord" : 3,
+                          "id" : "PROPNAME"
+                        },
+                        {
+                          "ord" : 4,
+                          "id" : "PROPADD1"
+                        },
+                        {
+                          "ord" : 5,
+                          "id" : "PROPADD2"
+                        },
+                        {
+                          "ord" : 6,
+                          "id" : "PROPCITY"
+                        },
+                        {
+                          "ord" : 7,
+                          "id" : "PROPSTATEPROV"
+                        },
+                        {
+                          "ord" : 8,
+                          "id" : "PROPCOUNTY"
+                        },
+                        {
+                          "ord" : 9,
+                          "id" : "PROPREGION"
+                        },
+                        {
+                          "ord" : 10,
+                          "id" : "PROPCOUNTRY"
+                        },
+                        {
+                          "ord" : 11,
+                          "id" : "PROPPOSTCODE"
+                        },
+                        {
+                          "ord" : 12,
+                          "id" : "MAINPHONECOUNTRY"
+                        },
+                        {
+                          "ord" : 13,
+                          "id" : "MAINPHONECITY"
+                        },
+                        {
+                          "ord" : 14,
+                          "id" : "MAINPHONE"
+                        },
+                        {
+                          "ord" : 15,
+                          "id" : "MAINFAXCOUNTRY"
+                        },
+                        {
+                          "ord" : 16,
+                          "id" : "MAINFAXCITY"
+                        },
+                        {
+                          "ord" : 17,
+                          "id" : "MAINFAX"
+                        },
+                        {
+                          "ord" : 18,
+                          "id" : "UNITOFMEAS"
+                        },
+                        {
+                          "ord" : 19,
+                          "id" : "PROPURL"
+                        },
+                        {
+                          "ord" : 20,
+                          "id" : "PROPSALESGENREMAIL"
+                        }
+                      ],
+                      "id" : "PLC"
+                    },
+                    {
+                      "ord" : 2,
+                      "cells" : [
+                        {
+                          "ord" : 21,
+                          "id" : "FULL_OR_LIM"
+                        },
+                        {
+                          "ord" : 22,
+                          "id" : "ES_STAY"
+                        },
+                        {
+                          "ord" : 23,
+                          "id" : "MKT_TIER"
+                        },
+                        {
+                          "ord" : 24,
+                          "id" : "YRBUILT"
+                        },
+                        {
+                          "ord" : 25,
+                          "id" : "LASTREN"
+                        },
+                        {
+                          "ord" : 26,
+                          "id" : "NUMROOMS"
+                        },
+                        {
+                          "ord" : 27,
+                          "id" : "NUMNOSMK"
+                        },
+                        {
+                          "ord" : 28,
+                          "id" : "NUMFLRS"
+                        },
+                        {
+                          "ord" : 29,
+                          "id" : "MGMTCOMPANY"
+                        },
+                        {
+                          "ord" : 30,
+                          "id" : "OWNERCOMPANY"
+                        },
+                        {
+                          "ord" : 31,
+                          "id" : "PROPOVERVIEW"
+                        },
+                        {
+                          "ord" : 32,
+                          "id" : "PROP_LOC"
+                        },
+                        {
+                          "ord" : 33,
+                          "id" : "AIRCITYCODE"
+                        },
+                        {
+                          "ord" : 34,
+                          "id" : "AIR1CODE",
+                          "req" : true
+                        }
+                      ],
+                      "id" : "PO"
+                    },
+                    {
+                      "ord" : 3,
+                      "cells" : [
+                        {
+                          "ord" : 35,
+                          "id" : "DISABCOMPLY"
+                        },
+                        {
+                          "ord" : 36,
+                          "id" : "DISABACCSS"
+                        },
+                        {
+                          "ord" : 37,
+                          "id" : "NUMDISABL"
+                        },
+                        {
+                          "ord" : 38,
+                          "id" : "HAND_PARK"
+                        }
+                      ],
+                      "id" : "FPPD"
+                    },
+                    {
+                      "ord" : 4,
+                      "cells" : [
+                        {
+                          "ord" : 39,
+                          "id" : "REST_ONSITE"
+                        },
+                        {
+                          "ord" : 40,
+                          "id" : "RM_SRV_AVL"
+                        },
+                        {
+                          "ord" : 41,
+                          "id" : "RM_SRV_HRS"
+                        },
+                        {
+                          "ord" : 42,
+                          "id" : "CONVENENCE_FOOD"
+                        },
+                        {
+                          "ord" : 43,
+                          "id" : "BUS_CENTER"
+                        },
+                        {
+                          "ord" : 44,
+                          "id" : "FRNT_DESK"
+                        },
+                        {
+                          "ord" : 45,
+                          "id" : "AIR_CONDITIONED"
+                        },
+                        {
+                          "ord" : 46,
+                          "id" : "PRIVATE_BATHSA"
+                        }
+                      ],
+                      "id" : "SA"
+                    },
+                    {
+                      "ord" : 5,
+                      "cells" : [
+                        {
+                          "ord" : 47,
+                          "id" : "AMEXCARD"
+                        },
+                        {
+                          "ord" : 48,
+                          "id" : "DINERSCARD"
+                        },
+                        {
+                          "ord" : 49,
+                          "id" : "DISCOVERCARD"
+                        },
+                        {
+                          "ord" : 50,
+                          "id" : "JCBCARD"
+                        },
+                        {
+                          "ord" : 51,
+                          "id" : "MASTERCARD"
+                        },
+                        {
+                          "ord" : 52,
+                          "id" : "VISACARD"
+                        }
+                      ],
+                      "id" : "CCA"
+                    },
+                    {
+                      "ord" : 6,
+                      "cells" : [
+                        {
+                          "ord" : 53,
+                          "id" : "AMADEUS_CHAINCODE"
+                        },
+                        {
+                          "ord" : 54,
+                          "id" : "AMADEUS_PROPCODE"
+                        },
+                        {
+                          "ord" : 55,
+                          "id" : "APOLLO_CHAINCODE"
+                        },
+                        {
+                          "ord" : 56,
+                          "id" : "APOLLO_PROPCODE"
+                        },
+                        {
+                          "ord" : 57,
+                          "id" : "SABRE_CHAINCODE"
+                        },
+                        {
+                          "ord" : 58,
+                          "id" : "SABRE_PROPCODE"
+                        },
+                        {
+                          "ord" : 59,
+                          "id" : "WORLDSPAN_CHAINCODE"
+                        },
+                        {
+                          "ord" : 60,
+                          "id" : "WRLDSPAN_PROPCODE"
+                        },
+                        {
+                          "ord" : 61,
+                          "id" : "MASTERCHAINCODE"
+                        }
+                      ],
+                      "id" : "PGDSCPC"
+                    }
+                  ],
+                  "id" : "PB"
+                },
+                {
+                  "ord" : 2,
+                  "cells" : [
+                    {
+                      "ord" : 1,
+                      "cells" : [
+                        {
+                          "ord" : 62,
+                          "id" : "CLIENT_NAME"
+                        },
+                        {
+                          "ord" : 63,
+                          "id" : "RM_NIGHTS"
+                        },
+                        {
+                          "ord" : 64,
+                          "id" : "RATE_CURR"
+                        }
+                      ],
+                      "id" : "RBO"
+                    },
+                    {
+                      "ord" : 2,
+                      "cells" : [
+                        {
+                          "ord" : 65,
+                          "id" : "DYNAMIC_PRICING"
+                        },
+                        {
+                          "ord" : 66,
+                          "id" : "DYNAMIC_PCT_Discount"
+                        }
+                      ],
+                      "id" : "DP"
+                    },
+                    {
+                      "ord" : 3,
+                      "id" : "RTG"
+                    },
+                    {
+                      "ord" : 5,
+                      "cells" : [
+                        {
+                          "ord" : 173,
+                          "id" : "COMMISSIONABLE"
+                        },
+                        {
+                          "ord" : 174,
+                          "id" : "COMM_PCT_CLIENT"
+                        },
+                        {
+                          "ord" : 175,
+                          "id" : "LOAD_GDS"
+                        }
+                      ],
+                      "id" : "RT2"
+                    },
+                    {
+                      "ord" : 6,
+                      "cells" : [
+                        {
+                          "ord" : 176,
+                          "id" : "WALK_HOTEL"
+                        },
+                        {
+                          "ord" : 177,
+                          "id" : "WALK_TAX"
+                        },
+                        {
+                          "ord" : 178,
+                          "id" : "WALK_TRANS"
+                        },
+                        {
+                          "ord" : 179,
+                          "id" : "WALK_CALL"
+                        }
+                      ],
+                      "id" : "OP"
+                    },
+                    {
+                      "ord" : 7,
+                      "cells" : [
+                        {
+                          "ord" : 180,
+                          "id" : "CANC_POL"
+                        },
+                        {
+                          "ord" : 181,
+                          "id" : "EARLYCK_FEE"
+                        },
+                        {
+                          "ord" : 182,
+                          "id" : "EARLYCK_UOM"
+                        },
+                        {
+                          "ord" : 183,
+                          "id" : "EARLYCK_INCLUDE"
+                        }
+                      ],
+                      "id" : "EC"
+                    },
+                    {
+                      "ord" : 8,
+                      "cells" : [
+                        {
+                          "ord" : 184,
+                          "id" : "LODGTX_FEE"
+                        },
+                        {
+                          "ord" : 185,
+                          "id" : "LODGTX_UOM"
+                        },
+                        {
+                          "ord" : 186,
+                          "id" : "LODGTX_INCLUDE"
+                        }
+                      ],
+                      "id" : "LOT"
+                    },
+                    {
+                      "ord" : 9,
+                      "cells" : [
+                        {
+                          "ord" : 187,
+                          "id" : "STATETX_FEE"
+                        },
+                        {
+                          "ord" : 188,
+                          "id" : "STATETX_UOM"
+                        },
+                        {
+                          "ord" : 189,
+                          "id" : "STATETX_INCLUDE"
+                        }
+                      ],
+                      "id" : "STT"
+                    },
+                    {
+                      "ord" : 10,
+                      "cells" : [
+                        {
+                          "ord" : 190,
+                          "id" : "CITYTX_FEE"
+                        },
+                        {
+                          "ord" : 191,
+                          "id" : "CITYTX_UOM"
+                        },
+                        {
+                          "ord" : 192,
+                          "id" : "CITYTX_INCLUDE"
+                        }
+                      ],
+                      "id" : "CIT"
+                    },
+                    {
+                      "ord" : 11,
+                      "cells" : [
+                        {
+                          "ord" : 193,
+                          "id" : "VATGSTRM_FEE"
+                        },
+                        {
+                          "ord" : 194,
+                          "id" : "VATGSTRM_UOM"
+                        },
+                        {
+                          "ord" : 195,
+                          "id" : "VATGSTRM_INCLUDE"
+                        }
+                      ],
+                      "id" : "VAT"
+                    },
+                    {
+                      "ord" : 12,
+                      "cells" : [
+                        {
+                          "ord" : 196,
+                          "id" : "VATGSTFB_FEE"
+                        },
+                        {
+                          "ord" : 197,
+                          "id" : "VATGSTFB_UOM"
+                        },
+                        {
+                          "ord" : 198,
+                          "id" : "VATGSTFB_INCLUDE"
+                        }
+                      ],
+                      "id" : "VATFB"
+                    },
+                    {
+                      "ord" : 13,
+                      "cells" : [
+                        {
+                          "ord" : 199,
+                          "id" : "SERVICE_FEE"
+                        },
+                        {
+                          "ord" : 200,
+                          "id" : "SERVICE_UOM"
+                        },
+                        {
+                          "ord" : 201,
+                          "id" : "SERVICE_INCLUDE"
+                        }
+                      ],
+                      "id" : "SET"
+                    },
+                    {
+                      "ord" : 14,
+                      "cells" : [
+                        {
+                          "ord" : 202,
+                          "id" : "OCC_FEE"
+                        },
+                        {
+                          "ord" : 203,
+                          "id" : "OCC_UOM"
+                        },
+                        {
+                          "ord" : 204,
+                          "id" : "OCC_INCLUDE"
+                        }
+                      ],
+                      "id" : "OCT"
+                    },
+                    {
+                      "ord" : 15,
+                      "cells" : [
+                        {
+                          "ord" : 205,
+                          "id" : "OTHERTX_FEE"
+                        },
+                        {
+                          "ord" : 206,
+                          "id" : "OTHERTX_FEE_UOM"
+                        },
+                        {
+                          "ord" : 207,
+                          "id" : "OTHERTX_FEE_DESC"
+                        },
+                        {
+                          "ord" : 208,
+                          "id" : "OTHERTX_FEE_INCL"
+                        }
+                      ],
+                      "id" : "OTT"
+                    },
+                    {
+                      "ord" : 16,
+                      "cells" : [
+                        {
+                          "ord" : 209,
+                          "id" : "PARKATTEND"
+                        },
+                        {
+                          "ord" : 210,
+                          "id" : "PARK_FEE"
+                        },
+                        {
+                          "ord" : 211,
+                          "id" : "PARK_INCLUDE"
+                        }
+                      ],
+                      "id" : "HACP"
+                    },
+                    {
+                      "ord" : 17,
+                      "cells" : [
+                        {
+                          "ord" : 212,
+                          "id" : "BREAK_INCLUDE"
+                        },
+                        {
+                          "ord" : 213,
+                          "id" : "BREAK_FEE"
+                        },
+                        {
+                          "ord" : 214,
+                          "id" : "BREAK_TYPE"
+                        }
+                      ],
+                      "id" : "HACB"
+                    },
+                    {
+                      "ord" : 18,
+                      "cells" : [
+                        {
+                          "ord" : 215,
+                          "id" : "FITON_CENT"
+                        },
+                        {
+                          "ord" : 216,
+                          "id" : "FITNESS_FEE_ON"
+                        },
+                        {
+                          "ord" : 217,
+                          "id" : "FITNESS_INCLUDE_ON"
+                        }
+                      ],
+                      "id" : "HACFC"
+                    },
+                    {
+                      "ord" : 19,
+                      "cells" : [
+                        {
+                          "ord" : 218,
+                          "id" : "LOCAL_PHONE_INCLUDE"
+                        }
+                      ],
+                      "id" : "HACLPC"
+                    },
+                    {
+                      "ord" : 20,
+                      "cells" : [
+                        {
+                          "ord" : 219,
+                          "id" : "TOLL_CARD_CALL_INCLUDE"
+                        }
+                      ],
+                      "id" : "HACTFCCC"
+                    },
+                    {
+                      "ord" : 21,
+                      "cells" : [
+                        {
+                          "ord" : 220,
+                          "id" : "HIGHSPEED_INROOM"
+                        },
+                        {
+                          "ord" : 221,
+                          "id" : "HIGHSPEED_INROOM_NUM"
+                        },
+                        {
+                          "ord" : 222,
+                          "id" : "HSIA_FEE"
+                        },
+                        {
+                          "ord" : 223,
+                          "id" : "HSIA_INCLUDE"
+                        }
+                      ],
+                      "id" : "HACWHSI"
+                    },
+                    {
+                      "ord" : 22,
+                      "cells" : [
+                        {
+                          "ord" : 224,
+                          "id" : "WIRELESS"
+                        },
+                        {
+                          "ord" : 225,
+                          "id" : "WIRELESS_NUM"
+                        },
+                        {
+                          "ord" : 226,
+                          "id" : "WIRELESS_FEE"
+                        },
+                        {
+                          "ord" : 227,
+                          "id" : "WIRELESS_INCLUDE"
+                        }
+                      ],
+                      "id" : "HACWSHSI"
+                    },
+                    {
+                      "ord" : 23,
+                      "cells" : [
+                        {
+                          "ord" : 228,
+                          "id" : "AIRTRANS_FEE"
+                        },
+                        {
+                          "ord" : 229,
+                          "id" : "AIRTRANS_INCLUDE"
+                        },
+                        {
+                          "ord" : 230,
+                          "id" : "AIRTRANS_DESCRIBE"
+                        }
+                      ],
+                      "id" : "HACTTFA"
+                    },
+                    {
+                      "ord" : 24,
+                      "cells" : [
+                        {
+                          "ord" : 231,
+                          "id" : "OFFTRANS_INCLUDE"
+                        }
+                      ],
+                      "id" : "HACTTFLO"
+                    },
+                    {
+                      "ord" : 25,
+                      "cells" : [
+                        {
+                          "ord" : 232,
+                          "id" : "RATE_SUBS"
+                        },
+                        {
+                          "ord" : 233,
+                          "id" : "RATE_PERSO"
+                        },
+                        {
+                          "ord" : 234,
+                          "id" : "RATE_CONSU"
+                        },
+                        {
+                          "ord" : 235,
+                          "id" : "RATE_RETIR"
+                        },
+                        {
+                          "ord" : 236,
+                          "id" : "RFP_CONTRACT"
+                        }
+                      ],
+                      "id" : "CNRAT"
+                    },
+                    {
+                      "ord" : 26,
+                      "cells" : [
+                        {
+                          "ord" : 237,
+                          "id" : "RFP_NAME"
+                        },
+                        {
+                          "ord" : 238,
+                          "id" : "RFP_TITLE"
+                        },
+                        {
+                          "ord" : 239,
+                          "id" : "RFP_PHONECOUNTRYCODE"
+                        },
+                        {
+                          "ord" : 240,
+                          "id" : "RFP_PHONECITYCODE"
+                        },
+                        {
+                          "ord" : 241,
+                          "id" : "RFP_PHONE"
+                        },
+                        {
+                          "ord" : 242,
+                          "id" : "RFP_EMAIL"
+                        },
+                        {
+                          "ord" : 243,
+                          "id" : "RFP_DATESUBMIT"
+                        }
+                      ],
+                      "id" : "CIRRRFP"
+                    },
+                    {
+                      "ord" : 27,
+                      "cells" : [
+                        {
+                          "ord" : 244,
+                          "name" : "Test 123",
+                          "description" : "Test 123 tooltip",
+                          "id" : "USERDEFINED1",
+                          "validations" : {
+                            "max" : 100
+                          },
+                          "type" : "TEXT"
+                        },
+                        {
+                          "ord" : 245,
+                          "name" : "Test Number",
+                          "description" : "123 ",
+                          "id" : "USERDEFINED2",
+                          "validations" : {
+                            "min_value" : 0,
+                            "max_value" : 100,
+                            "decimal" : "0"
+                          },
+                          "type" : "NUMBER",
+                          "req" : true
+                        },
+                        {
+                          "ord" : 251,
+                          "name" : "123",
+                          "description" : "123",
+                          "id" : "USERDEFINED8",
+                          "validations" : {
+                            "max" : 100
+                          },
+                          "type" : "TEXT"
+                        },
+                        {
+                          "ord" : 255,
+                          "name" : "User Defined",
+                          "options" : [
+                            {
+                              "label" : "Yes",
+                              "value" : "Y"
+                            },
+                            {
+                              "label" : "Maybe",
+                              "value" : "M"
+                            },
+                            {
+                              "label" : "No",
+                              "value" : "N"
+                            }
+                          ],
+                          "id" : "USERDEFINED12",
+                          "validations" : {
+                            "in" : [
+                              "Y",
+                              "M",
+                              "N"
+                            ]
+                          },
+                          "type" : "LIST"
+                        }
+                      ],
+                      "id" : "CUD"
+                    }
+                  ],
+                  "id" : "CS"
+                },
+                {
+                  "ord" : 3,
+                  "cells" : [
+                    {
+                      "ord" : 1,
+                      "cells" : [
+                        {
+                          "ord" : 274,
+                          "id" : "IN_SAFE"
+                        },
+                        {
+                          "ord" : 275,
+                          "id" : "LAPTOP_SAFE"
+                        }
+                      ],
+                      "id" : "IRS"
+                    },
+                    {
+                      "ord" : 2,
+                      "cells" : [
+                        {
+                          "ord" : 276,
+                          "id" : "ROOMSMKDET"
+                        },
+                        {
+                          "ord" : 277,
+                          "id" : "HALLSMKDET"
+                        },
+                        {
+                          "ord" : 278,
+                          "id" : "PUBSMKDET"
+                        },
+                        {
+                          "ord" : 279,
+                          "id" : "HRDWIREDET"
+                        },
+                        {
+                          "ord" : 280,
+                          "id" : "FIRE_EXTIN"
+                        },
+                        {
+                          "ord" : 281,
+                          "id" : "EMRGCYLITE"
+                        },
+                        {
+                          "ord" : 282,
+                          "id" : "VENT_STAIR"
+                        },
+                        {
+                          "ord" : 283,
+                          "id" : "EVACPLAN"
+                        },
+                        {
+                          "ord" : 284,
+                          "id" : "FIRELAWS"
+                        },
+                        {
+                          "ord" : 285,
+                          "id" : "VIS_ALARM"
+                        },
+                        {
+                          "ord" : 286,
+                          "id" : "HALLVIS_ALARM"
+                        },
+                        {
+                          "ord" : 287,
+                          "id" : "PUBVIS_ALARM"
+                        },
+                        {
+                          "ord" : 288,
+                          "id" : "AUD_ALARM"
+                        },
+                        {
+                          "ord" : 289,
+                          "id" : "HALLAUD_ALARM"
+                        },
+                        {
+                          "ord" : 290,
+                          "id" : "PUBAUD_ALARM"
+                        },
+                        {
+                          "ord" : 291,
+                          "id" : "ROOMSPRINK"
+                        },
+                        {
+                          "ord" : 292,
+                          "id" : "HALLSPRINK"
+                        },
+                        {
+                          "ord" : 293,
+                          "id" : "PUBSPRINK"
+                        },
+                        {
+                          "ord" : 294,
+                          "id" : "EMRGCYINFO"
+                        },
+                        {
+                          "ord" : 295,
+                          "id" : "FIRE_LINK"
+                        },
+                        {
+                          "ord" : 296,
+                          "id" : "MULT_EXITS"
+                        },
+                        {
+                          "ord" : 297,
+                          "id" : "AUTO_RECAL"
+                        }
+                      ],
+                      "id" : "FS"
+                    },
+                    {
+                      "ord" : 3,
+                      "cells" : [
+                        {
+                          "ord" : 298,
+                          "id" : "SECURITY"
+                        },
+                        {
+                          "ord" : 299,
+                          "id" : "SECUR_HRS"
+                        },
+                        {
+                          "ord" : 300,
+                          "id" : "DEADBOLTS"
+                        },
+                        {
+                          "ord" : 301,
+                          "id" : "INT_ACCESS"
+                        },
+                        {
+                          "ord" : 302,
+                          "id" : "DOORS_CLOSE"
+                        },
+                        {
+                          "ord" : 303,
+                          "id" : "OPEN_WINDOWS"
+                        },
+                        {
+                          "ord" : 304,
+                          "id" : "PUBADDRESS"
+                        },
+                        {
+                          "ord" : 305,
+                          "id" : "SAFE_CODES"
+                        },
+                        {
+                          "ord" : 306,
+                          "id" : "PARKGATES"
+                        },
+                        {
+                          "ord" : 307,
+                          "id" : "PARKPATROL"
+                        },
+                        {
+                          "ord" : 308,
+                          "id" : "PARKLIGHTS"
+                        },
+                        {
+                          "ord" : 309,
+                          "id" : "PUBCAMERA"
+                        },
+                        {
+                          "ord" : 310,
+                          "id" : "PARK_FR_ENT"
+                        },
+                        {
+                          "ord" : 311,
+                          "id" : "PARK_CAMERA"
+                        },
+                        {
+                          "ord" : 312,
+                          "id" : "CAMERA_REC_24HR"
+                        },
+                        {
+                          "ord" : 313,
+                          "id" : "CAMERA_MONT_24HR"
+                        },
+                        {
+                          "ord" : 314,
+                          "id" : "VIEWPORTS"
+                        },
+                        {
+                          "ord" : 315,
+                          "id" : "BACK_UP"
+                        },
+                        {
+                          "ord" : 316,
+                          "id" : "EXT_DOOR_KEY_ACCESS"
+                        },
+                        {
+                          "ord" : 317,
+                          "id" : "STAFF_AID"
+                        },
+                        {
+                          "ord" : 318,
+                          "id" : "STAFF_CPR_TRAIN"
+                        },
+                        {
+                          "ord" : 319,
+                          "id" : "STAFF_CPR_CERT"
+                        },
+                        {
+                          "ord" : 320,
+                          "id" : "AED_ONSITE"
+                        },
+                        {
+                          "ord" : 321,
+                          "id" : "STAFF_AED"
+                        },
+                        {
+                          "ord" : 322,
+                          "id" : "KEY_ID"
+                        },
+                        {
+                          "ord" : 323,
+                          "id" : "KEY_ELEVATOR"
+                        },
+                        {
+                          "ord" : 324,
+                          "id" : "KEY_PUBLIC"
+                        }
+                      ],
+                      "id" : "PS"
+                    }
+                  ],
+                  "id" : "SS"
+                },
+                {
+                  "ord" : 4,
+                  "cells" : [
+                    {
+                      "ord" : 1,
+                      "cells" : [
+                        {
+                          "ord" : 325,
+                          "id" : "LASTROOMAVAIL_BD"
+                        }
+                      ],
+                      "id" : "BFD"
+                    },
+                    {
+                      "ord" : 2,
+                      "id" : "BFDT"
+                    }
+                  ],
+                  "id" : "BD"
+                },
+                {
+                  "ord" : 5,
+                  "cells" : [
+                    {
+                      "ord" : 1,
+                      "cells" : [
+                        {
+                          "ord" : 416,
+                          "id" : "GROCERY_SVC"
+                        },
+                        {
+                          "ord" : 417,
+                          "id" : "STORAGE"
+                        },
+                        {
+                          "ord" : 418,
+                          "id" : "STORAGE_FEE"
+                        },
+                        {
+                          "ord" : 419,
+                          "id" : "LAUN_DRY"
+                        },
+                        {
+                          "ord" : 420,
+                          "id" : "LAUNDRY_SITE"
+                        },
+                        {
+                          "ord" : 421,
+                          "id" : "MINI_FRIG"
+                        },
+                        {
+                          "ord" : 422,
+                          "id" : "MICRO"
+                        },
+                        {
+                          "ord" : 423,
+                          "id" : "COFF_TEA"
+                        },
+                        {
+                          "ord" : 424,
+                          "id" : "STOVE"
+                        },
+                        {
+                          "ord" : 425,
+                          "id" : "OVEN"
+                        },
+                        {
+                          "ord" : 426,
+                          "id" : "TOASTER"
+                        },
+                        {
+                          "ord" : 427,
+                          "id" : "DINING_WARE"
+                        },
+                        {
+                          "ord" : 428,
+                          "id" : "DISHES"
+                        },
+                        {
+                          "ord" : 429,
+                          "id" : "HOUSEKEEPING"
+                        },
+                        {
+                          "ord" : 430,
+                          "id" : "HOUSE_CHARGE"
+                        }
+                      ],
+                      "id" : "ESSA"
+                    },
+                    {
+                      "ord" : 2,
+                      "cells" : [
+                        {
+                          "ord" : 431,
+                          "id" : "LOS2MIN_ES"
+                        },
+                        {
+                          "ord" : 432,
+                          "id" : "LOS2MAX_ES"
+                        },
+                        {
+                          "ord" : 433,
+                          "id" : "LOS3MIN_ES"
+                        },
+                        {
+                          "ord" : 434,
+                          "id" : "LOS3MAX_ES"
+                        },
+                        {
+                          "ord" : 435,
+                          "id" : "LOS4MIN_ES"
+                        },
+                        {
+                          "ord" : 436,
+                          "id" : "LOS4MAX_ES"
+                        }
+                      ],
+                      "id" : "ALOSR"
+                    },
+                    {
+                      "ord" : 3,
+                      "id" : "ESRT"
+                    },
+                    {
+                      "ord" : 4,
+                      "cells" : [
+                        {
+                          "ord" : 627,
+                          "id" : "ADDTL_CHARGE_R1_ES"
+                        },
+                        {
+                          "ord" : 628,
+                          "id" : "ADDTL_CHARGE_R2_ES"
+                        },
+                        {
+                          "ord" : 629,
+                          "id" : "ADDTL_CHARGE_R3_ES"
+                        },
+                        {
+                          "ord" : 630,
+                          "id" : "LOS_OCC_ES"
+                        },
+                        {
+                          "ord" : 631,
+                          "id" : "RATE_NOTES_ES"
+                        },
+                        {
+                          "ord" : 632,
+                          "id" : "ADDL_SVC_ES"
+                        }
+                      ],
+                      "id" : "ADDO2P"
+                    }
+                  ],
+                  "id" : "ES"
+                },
+                {
+                  "ord" : 6,
+                  "cells" : [
+                    {
+                      "ord" : 1,
+                      "cells" : [
+                        {
+                          "ord" : 633,
+                          "id" : "GROUPUNITOFMEAS"
+                        },
+                        {
+                          "ord" : 634,
+                          "id" : "MTGSPACE"
+                        },
+                        {
+                          "ord" : 635,
+                          "id" : "MTGROOMS"
+                        },
+                        {
+                          "ord" : 636,
+                          "id" : "LGST_MTGRM"
+                        },
+                        {
+                          "ord" : 637,
+                          "id" : "BOARDROOM"
+                        }
+                      ],
+                      "id" : "GI"
+                    },
+                    {
+                      "ord" : 2,
+                      "cells" : [
+                        {
+                          "ord" : 638,
+                          "id" : "MTG_TAX_AMT"
+                        },
+                        {
+                          "ord" : 639,
+                          "id" : "MTG_TAX_UOM"
+                        },
+                        {
+                          "ord" : 640,
+                          "id" : "MTG_TAX_INCL"
+                        },
+                        {
+                          "ord" : 641,
+                          "id" : "MTG_SERVICE_AMT"
+                        },
+                        {
+                          "ord" : 642,
+                          "id" : "MTG_SERVICE_UOM"
+                        },
+                        {
+                          "ord" : 643,
+                          "id" : "MTG_SERVICE_INCL"
+                        }
+                      ],
+                      "id" : "TCADDR"
+                    },
+                    {
+                      "ord" : 3,
+                      "cells" : [
+                        {
+                          "ord" : 644,
+                          "id" : "BREAKOUT_10"
+                        },
+                        {
+                          "ord" : 645,
+                          "id" : "BREAKOUT_25"
+                        }
+                      ],
+                      "id" : "BORC"
+                    },
+                    {
+                      "ord" : 4,
+                      "id" : "GRR"
+                    },
+                    {
+                      "ord" : 5,
+                      "cells" : [
+                        {
+                          "ord" : 656,
+                          "id" : "MTGPKG_FULL_10-50"
+                        },
+                        {
+                          "ord" : 657,
+                          "id" : "MTGPKG_HALF_10-50"
+                        },
+                        {
+                          "ord" : 658,
+                          "id" : "MTGPKG_FULL_51-100"
+                        },
+                        {
+                          "ord" : 659,
+                          "id" : "MTGPKG_HALF_51-100"
+                        }
+                      ],
+                      "id" : "DDR"
+                    },
+                    {
+                      "ord" : 6,
+                      "cells" : [
+                        {
+                          "ord" : 660,
+                          "id" : "PARK_COMP_MTG"
+                        },
+                        {
+                          "ord" : 661,
+                          "id" : "AV_SUPPLIER"
+                        },
+                        {
+                          "ord" : 662,
+                          "id" : "LCD_COST"
+                        },
+                        {
+                          "ord" : 663,
+                          "id" : "LCD_INCL"
+                        },
+                        {
+                          "ord" : 664,
+                          "id" : "SCREEN_COST"
+                        },
+                        {
+                          "ord" : 665,
+                          "id" : "SCREEN_INCL"
+                        },
+                        {
+                          "ord" : 666,
+                          "id" : "HSIA_COST_MTG"
+                        },
+                        {
+                          "ord" : 667,
+                          "id" : "HSIA_INCL_MTG"
+                        }
+                      ],
+                      "id" : "CI"
+                    }
+                  ],
+                  "id" : "GM"
+                },
+                {
+                  "ord" : 7,
+                  "cells" : [
+                    {
+                      "ord" : 1,
+                      "cells" : [
+                        {
+                          "ord" : 698,
+                          "id" : "CSR_CERTIFIED"
+                        },
+                        {
+                          "ord" : 699,
+                          "id" : "CSR_CERTIFIED_BY"
+                        },
+                        {
+                          "ord" : 700,
+                          "id" : "CSR_CERTIFIED_AUDIT"
+                        }
+                      ],
+                      "id" : "CERT"
+                    },
+                    {
+                      "ord" : 2,
+                      "cells" : [
+                        {
+                          "ord" : 701,
+                          "id" : "MEAS_CARBON"
+                        },
+                        {
+                          "ord" : 702,
+                          "id" : "MEAS_CARBON_AMT"
+                        },
+                        {
+                          "ord" : 703,
+                          "id" : "MEAS_CARBON_UOM"
+                        },
+                        {
+                          "ord" : 704,
+                          "id" : "MEAS_CARBON_PD"
+                        }
+                      ],
+                      "id" : "CM"
+                    },
+                    {
+                      "ord" : 3,
+                      "cells" : [
+                        {
+                          "ord" : 705,
+                          "id" : "MEAS_WATER_PRN"
+                        },
+                        {
+                          "ord" : 706,
+                          "id" : "MEAS_WATER_AMT"
+                        },
+                        {
+                          "ord" : 707,
+                          "id" : "MEAS_WATER_UOM"
+                        },
+                        {
+                          "ord" : 708,
+                          "id" : "MEAS_WATER_PD"
+                        }
+                      ],
+                      "id" : "WUM"
+                    },
+                    {
+                      "ord" : 4,
+                      "cells" : [
+                        {
+                          "ord" : 709,
+                          "id" : "MEAS_ENERGY"
+                        },
+                        {
+                          "ord" : 710,
+                          "id" : "MEAS_ENERGY_AMT"
+                        },
+                        {
+                          "ord" : 711,
+                          "id" : "MEAS_ENERGY_UOM"
+                        },
+                        {
+                          "ord" : 712,
+                          "id" : "MEAS_ENERGY_PD"
+                        }
+                      ],
+                      "id" : "EIM"
+                    },
+                    {
+                      "ord" : 5,
+                      "cells" : [
+                        {
+                          "ord" : 713,
+                          "id" : "MEAS_WASTE"
+                        },
+                        {
+                          "ord" : 714,
+                          "id" : "MEAS_WASTE_PCT"
+                        },
+                        {
+                          "ord" : 715,
+                          "id" : "MEAS_WASTE_PD"
+                        }
+                      ],
+                      "id" : "WDM"
+                    },
+                    {
+                      "ord" : 6,
+                      "cells" : [
+                        {
+                          "ord" : 716,
+                          "id" : "ENVIRO_CSR"
+                        },
+                        {
+                          "ord" : 717,
+                          "id" : "ENVIRO_CSR_PROGRAM"
+                        }
+                      ],
+                      "id" : "CSRP"
+                    }
+                  ],
+                  "id" : "CSR"
+                }
+              ],
+              "id" : "root"
+            },
+            "config" : [
+              {
+                "id" : "RT",
+                "data" : {
+                  "rate" : [
+                    "LRA",
+                    "NLRA"
+                  ],
+                  "occupancy" : [
+                    "SGL"
+                  ],
+                  "rateRules" : {
+                    "amount" : "0",
+                    "baseRate" : "lastYearRate"
+                  },
+                  "season" : [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                  ],
+                  "roomType" : [
+                    1
+                  ]
+                }
+              },
+              {
+                "id" : "BFDT",
+                "data" : {
+                  "occupancy" : [
+                    "SGL"
+                  ],
+                  "roomType" : [
+                    1
+                  ],
+                  "blackoutDate" : [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10
+                  ]
+                }
+              },
+              {
+                "id" : "ESRT",
+                "data" : {
+                  "lengthOfStay" : [
+                    2
+                  ],
+                  "rate" : [
+                    "LRA",
+                    "NLRA"
+                  ],
+                  "occupancy" : [
+                    "SGL"
+                  ],
+                  "season" : [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                  ],
+                  "roomType" : [
+                    1
+                  ]
+                }
+              },
+              {
+                "id" : "GRR",
+                "data" : {
+                  "season" : [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                  ]
+                }
+              }
+            ],
+            "response" : {
+              "answers" : {
+                "PROPCODE" : "1116540",
+                "PROPADD1" : "Cvijićeva 44",
+                "PROPADD2" : "",
+                "CLIENT_NAME" : "Test Company 1234",
+                "AIR1CODE" : "BEG",
+                "PROPSTATEPROV" : "",
+                "SEASON1END" : "2019-12-31",
+                "NUMROOMS" : "40",
+                "RATE_CURR" : "USD",
+                "PROPCOUNTRY" : "Serbia",
+                "PROPNAME" : "Nevski ",
+                "PROPCITY" : "Beograd",
+                "PROPREGION" : "",
+                "SEASON1START" : "2019-01-01",
+                "PROPURL" : "http://nevski.com"
+              },
+              "isAvailable" : false,
+              "state" : [
+                {
+                  "id" : "RT",
+                  "data" : {
+                    "season" : [
+                      1.0
+                    ],
+                    "roomType" : [
+                      1.0
+                    ]
+                  }
+                },
+                {
+                  "id" : "BFDT",
+                  "data" : {
+                    "roomType" : [
+                      1.0
+                    ],
+                    "blackoutDate" : [
+                      1.0
+                    ]
+                  }
+                },
+                {
+                  "id" : "ESRT",
+                  "data" : {
+                    "lengthOfStay" : [
+                      2.0
+                    ],
+                    "season" : [
+                      1.0
+                    ],
+                    "roomType" : [
+                      1.0
+                    ]
+                  }
+                },
+                {
+                  "id" : "GRR",
+                  "data" : {
+                    "season" : [
+                      1.0
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          "subject" : {
+            "_id" : { "ObjectId" : "5a672dba9f4c2f50b876876b" },
+            "rfpId" : { "ObjectId" : "5a66c07c9f4c2f50b876876a" },
+            "type" : "OFFICE",
+            "name" : "TEST UD Questions",
+            "location" : {
+              "address" : {
+                "address1" : "Cvijićeva 44",
+                "city" : "Beograd",
+                "country" : "RS"
+              },
+              "fullAddress" : "Cvijićeva 44, Beograd, Serbia",
+              "coordinates" : {
+                "lat" : 44.8155632019043,
+                "lng" : 20.4770183563232,
+                "point" : {
+                  "type" : "Point",
+                  "coordinates" : [
+                    20.4770183563232,
+                    44.8155632019043
+                  ]
+                }
+              }
+            },
+            "filter" : {
+              "maxDistance" : {
+                "value" : 3.0,
+                "unit" : "MI"
+              }
+            },
+            "created" : {
+              "at" : { "ISODate" : "2018-01-23T12:42:34.308Z" },
+              "by" : {
+                "_id" : { "ObjectId" : "59ad5164bb832a251cde1eaa" },
+                "firstName" : "dejan",
+                "lastName" : "kosijer",
+                "emailAddress" : "real.deka@gmail.com",
+                "phone" : "+381691413978"
+              }
+            },
+            "status" : {
+              "at" : { "ISODate" : "2018-01-23T12:42:34.308Z" },
+              "value" : "CREATED",
+              "by" : {
+                "_id" : { "ObjectId" : "59ad5164bb832a251cde1eaa" },
+                "firstName" : "dejan",
+                "lastName" : "kosijer",
+                "emailAddress" : "real.deka@gmail.com",
+                "phone" : "+381691413978"
+              }
+            }
+          },
+          "buyer" : {
+            "company" : {
+              "entityId" : { "ObjectId" : "56e597c2bfc40d2dfe0616b3" },
+              "accountId" : { "ObjectId" : "59ad5184bb832a27e8d38ff1" },
+              "name" : "Test Company 1234",
+              "type" : "COMPANY",
+              "industry" : "ENERGY",
+              "location" : {
+                "address" : {
+                  "address1" : "Meše Selimovića 19",
+                  "city" : "Beograd",
+                  "country" : "RS"
+                },
+                "fullAddress" : "Meše Selimovića 19, Beograd, Serbia",
+                "coordinates" : {
+                  "lat" : 44.7934951782227,
+                  "lng" : 20.5377235412598,
+                  "point" : {
+                    "type" : "Point",
+                    "coordinates" : [
+                      20.5377235412598,
+                      44.7934951782227
+                    ]
+                  }
+                }
+              },
+              "website" : "http://readybid.net",
+              "logo" : "56e597c2bfc40d2dfe0616b3_3fbfb2e0.jpg"
+            },
+            "contact" : {
+              "id" : { "ObjectId" : "59ad5184bb832a27e8d38ff2" },
+              "firstName" : "Dejan",
+              "lastName" : "Kosijer",
+              "fullName" : "Dejan Kosijer",
+              "emailAddress" : "real.deka@gmail.com",
+              "phone" : "+381691413978",
+              "jobTitle" : "Test",
+              "company" : {
+                "entityId" : { "ObjectId" : "56e597c2bfc40d2dfe0616b3" },
+                "accountId" : { "ObjectId" : "59ad5184bb832a27e8d38ff1" },
+                "name" : "Test Company 1234",
+                "type" : "COMPANY",
+                "industry" : "ENERGY",
+                "location" : {
+                  "address" : {
+                    "address1" : "Meše Selimovića 19",
+                    "city" : "Beograd",
+                    "country" : "RS"
+                  },
+                  "fullAddress" : "Meše Selimovića 19, Beograd, Serbia",
+                  "coordinates" : {
+                    "lat" : 44.7934951782227,
+                    "lng" : 20.5377235412598,
+                    "point" : {
+                      "type" : "Point",
+                      "coordinates" : [
+                        20.5377235412598,
+                        44.7934951782227
+                      ]
+                    }
+                  }
+                },
+                "website" : "http://readybid.net",
+                "logo" : "56e597c2bfc40d2dfe0616b3_3fbfb2e0.jpg"
+              },
+              "isUser" : true,
+              "profilePicture" : "59ad5164bb832a251cde1eaa_a9529241.jpg"
+            }
+          },
+          "supplier" : {
+            "company" : {
+              "entityId" : { "ObjectId" : "5910697917ec11611986414c" },
+              "accountId" : { "ObjectId" : "5a672dc09f4c2f50b876876d" },
+              "name" : "Nevski ",
+              "type" : "HOTEL",
+              "industry" : "TRAVEL_AND_HOSPITALITY",
+              "location" : {
+                "address" : {
+                  "address1" : "Cvijićeva 44",
+                  "city" : "Beograd",
+                  "country" : "RS"
+                },
+                "fullAddress" : "Cvijićeva 44, Beograd, Serbia",
+                "coordinates" : {
+                  "lat" : 44.8155632019043,
+                  "lng" : 20.4770183563232,
+                  "point" : {
+                    "type" : "Point",
+                    "coordinates" : [
+                      20.4770183563232,
+                      44.8155632019043
+                    ]
+                  }
+                }
+              },
+              "website" : "http://nevski.com",
+              "phone" : "381113229722",
+              "chain" : {
+                "_id" : { "ObjectId" : "5a314152e6d3107588940625" },
+                "type" : "CHAIN",
+                "name" : "HRS",
+                "industry" : "TRAVEL_AND_HOSPITALITY",
+                "created" : {
+                  "at" : { "ISODate" : "2000-01-01T00:00:00.000Z" },
+                  "by" : { "ObjectId" : "000000000000000000000000" }
+                },
+                "status" : {
+                  "at" : { "ISODate" : "2000-01-01T00:00:00.000Z" },
+                  "value" : "ACTIVE",
+                  "by" : { "ObjectId" : "000000000000000000000000" }
+                },
+                "code" : "HQ",
+                "subtype" : "BRAND"
+              },
+              "category" : {
+                "id" : 0,
+                "label" : "Hotel-unknown"
+              },
+              "rating" : 0,
+              "amenities" : []
+            },
+            "contact" : {
+              "id" : { "ObjectId" : "5a74b4a78a7431566c2b0b04" },
+              "firstName" : "Dejan 123",
+              "lastName" : "Kosijer",
+              "fullName" : "Dejan 123 Kosijer",
+              "emailAddress" : "real.deka@gmail.com",
+              "phone" : "+381691413978",
+              "jobTitle" : "test",
+              "company" : {
+                "entityId" : { "ObjectId" : "5910697917ec11611986414c" },
+                "accountId" : { "ObjectId" : "5a672dc09f4c2f50b876876d" },
+                "name" : "Nevski ",
+                "type" : "HOTEL",
+                "industry" : "TRAVEL_AND_HOSPITALITY",
+                "location" : {
+                  "address" : {
+                    "address1" : "Cvijićeva 44",
+                    "city" : "Beograd",
+                    "country" : "RS"
+                  },
+                  "fullAddress" : "Cvijićeva 44, Beograd, Serbia",
+                  "coordinates" : {
+                    "lat" : 44.8155632019043,
+                    "lng" : 20.4770183563232,
+                    "point" : {
+                      "type" : "Point",
+                      "coordinates" : [
+                        20.4770183563232,
+                        44.8155632019043
+                      ]
+                    }
+                  }
+                },
+                "website" : "http://nevski.com",
+                "phone" : "381113229722"
+              },
+              "isUser" : true,
+              "profilePicture" : "59ad5164bb832a251cde1eaa_d678ef00.jpg"
+            }
+          },
+          "analytics" : {
+            "address" : {
+              "country" : "Serbia",
+              "city" : "Beograd, Serbia",
+              "stateRegion" : "Serbia"
+            },
+            "distanceKm" : 0.0,
+            "distanceMi" : 0.0
+          },
+          "created" : {
+            "at" : { "ISODate" : "2018-01-23T12:42:40.390Z" },
+            "by" : {
+              "_id" : { "ObjectId" : "59ad5164bb832a251cde1eaa" },
+              "firstName" : "dejan",
+              "lastName" : "kosijer",
+              "emailAddress" : "real.deka@gmail.com",
+              "phone" : "+381691413978"
+            }
+          },
+          "status" : {
+            "at" : { "ISODate" : "2018-01-23T12:42:40.390Z" },
+            "value" : "CREATED",
+            "by" : {
+              "_id" : { "ObjectId" : "59ad5164bb832a251cde1eaa" },
+              "firstName" : "dejan",
+              "lastName" : "kosijer",
+              "emailAddress" : "real.deka@gmail.com",
+              "phone" : "+381691413978"
+            }
+          },
+          "_noSync" : true
+        }
+      ]
+    }
+  ]
+}

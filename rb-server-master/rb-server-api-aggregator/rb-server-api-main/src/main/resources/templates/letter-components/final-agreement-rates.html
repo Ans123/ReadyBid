@@ -1,0 +1,42 @@
+<table class="final-agreement" th:object="${rates}">
+    <thead>
+    <tr>
+        <th colspan="2" class="season">
+            <strong th:text="*{seasonsCount}">5</strong>
+            <span th:text="*{seasonsCount == 1} ? 'Season' : 'Seasons'">Seasons</span>
+            /
+            <strong th:text="*{roomTypesCount}">3</strong>
+            <span th:text="*{roomTypesCount == 1} ? 'Room Type' : 'Room Types'">Room Types</span>
+        </th>
+        <th th:each="rateName : *{rateNames}" th:colspan="*{#lists.size(occupancies)}" class="rate"><strong th:text="${rateName}">LRA</strong></th>
+    </tr>
+    </thead>
+    <tbody th:each="season : ${rates.seasons}" th:remove="tag">
+
+    <tr class="heading">
+        <td class="season"><strong>Season <span th:text="${season.ordinal}">1</span> Period</strong></td>
+        <td class="room-type">RT</td>
+        <td th:each="occupancy : *{occupancyNames}" class="rate" th:text="${occupancy}">Single</td>
+    </tr>
+    <tr th:each="roomType,iterStat : ${season.roomTypes}">
+        <td th:if="${iterStat.first}" class="season" th:rowspan="${iterStat.size}">
+            <i class="fa fa-calendar"></i> <strong th:text="${season.period}">1.1.2018. - 4.30.2018</strong>
+        </td>
+        <td class="room-type"><strong th:text="${roomType.ordinal}">1</strong></td>
+        <td class="rate" th:each="rate : ${roomType.rates}" th:text="${rate}">$150.00</td>
+    </tr>
+    </tbody>
+</table>
+
+<table th:if="${rates.dynamicExists}" class="final-agreement dynamic">
+    <thead>
+    <tr>
+        <th><strong>DYNAMIC RATE</strong></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td class="dyn"><strong th:text="${rates.dynamicAmount}"></strong></td>
+    </tr>
+    </tbody>
+</table>

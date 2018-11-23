@@ -1,0 +1,296 @@
+{
+  "collections": [
+    {
+      "name": "Bid",
+      "documents": [
+        {},
+        {
+          "description": "Success Test: Bid for Hotel 1 in CREATED state",
+          "_id": { "ObjectId": "5a0c8569bb832a2128f20010" },
+          "rfp": {
+            "specifications": {
+              "programEndDate": "2017-12-31"
+            }
+          },
+          "buyer": {
+            "contact": {
+              "company": {
+                "name": "BUYER COMPANY NAME"
+              }
+            },
+            "company": {
+              "accountId": { "ObjectId": "59df7063bb832a05ecde0001" }
+            }
+          },
+          "supplier": {
+            "contact": {
+              "id": { "ObjectId": "59cc6d13bb832a1ed81c0010" },
+              "emailAddress": "hotel_1@test.com",
+              "fullName": "HOTEL 1 REP",
+              "company": {
+                "accountId" : { "ObjectId": "56cc6d13bb832a1ed81c0010" },
+                "name": "HOTEL 1",
+                "type": "HOTEL"
+              }
+            },
+            "company": {
+              "entityId": { "ObjectId": "56014c0a9537801174122010" }
+            }
+          },
+          "state": {
+            "status": "CREATED"
+          }
+        },
+        {
+          "description": "Success Test: Bid for Hotel 2 in SENT state ",
+          "_id": { "ObjectId": "5a0c8569bb832a2128f20020" },
+          "rfp": {
+            "specifications": {
+              "programEndDate": "2017-12-31"
+            }
+          },
+          "buyer": {
+            "contact": {
+              "company": {
+                "name": "BUYER COMPANY NAME 2"
+              }
+            },
+            "company": {
+              "accountId": { "ObjectId": "59df7063bb832a05ecde0001" }
+            }
+          },
+          "supplier": {
+            "contact": {
+              "id": { "ObjectId": "59cc6d13bb832a1ed81c0020" },
+              "emailAddress": "hotel_2@test.com",
+              "fullName": "HOTEL 2 REP",
+              "company": {
+                "accountId" : { "ObjectId": "56cc6d13bb832a1ed81c0020" },
+                "name": "HOTEL 2",
+                "type": "HOTEL"
+              }
+            },
+            "company": {
+              "entityId": { "ObjectId": "56014c0a9537801174122020" }
+            }
+          },
+          "state": {
+            "status": "SENT"
+          }
+        },
+        {
+          "description": "Success Test: Bid for Chain 1 A in CREATED state ",
+          "_id": { "ObjectId": "5a0c8569bb832a2128f20030" },
+          "rfp": {
+            "specifications": {
+              "programEndDate": "2017-12-31"
+            }
+          },
+          "buyer": {
+            "contact": {
+              "company": {
+                "name": "BUYER COMPANY NAME 3"
+              }
+            },
+            "company": {
+              "accountId": { "ObjectId": "59df7063bb832a05ecde0001" }
+            }
+          },
+          "supplier": {
+            "contact": {
+              "id": { "ObjectId": "59cc6d13bb832a1ed81c0030" },
+              "emailAddress": "chain_1@test.com",
+              "fullName": "CHAIN 1 REP",
+              "company": {
+                "accountId" : { "ObjectId": "56cc6d13bb832a1ed81c0030" },
+                "name": "CHAIN 1",
+                "type": "CHAIN"
+              }
+            },
+            "company": {
+              "entityId": { "ObjectId": "56014c0a9537801174122030" }
+            }
+          },
+          "state": {
+            "status": "CREATED"
+          }
+        },
+        {
+          "description": "Success Test: Bid for Chain 1 B in SENT state ",
+          "_id": { "ObjectId": "5a0c8569bb832a2128f20040" },
+          "rfp": {
+            "specifications": {
+              "programEndDate": "2017-12-31"
+            }
+          },
+          "buyer": {
+            "contact": {
+              "company": {
+                "name": "BUYER COMPANY NAME 3"
+              }
+            },
+            "company": {
+              "accountId": { "ObjectId": "59df7063bb832a05ecde0001" }
+            }
+          },
+          "supplier": {
+            "contact": {
+              "id": { "ObjectId": "59cc6d13bb832a1ed81c0030" },
+              "emailAddress": "chain_1@test.com",
+              "fullName": "CHAIN 1 REP",
+              "company": {
+                "accountId" : { "ObjectId": "56cc6d13bb832a1ed81c0030" },
+                "name": "CHAIN 1",
+                "type": "CHAIN"
+              }
+            },
+            "company": {
+              "entityId": { "ObjectId": "56014c0a9537801174122030" }
+            }
+          },
+          "state": {
+            "status": "SENT"
+          }
+        },
+        {
+          "description": "Success Test: Bid for Chain 2 A in CREATED state ",
+          "_id": { "ObjectId": "5a0c8569bb832a2128f20050" },
+          "rfp": {
+            "specifications": {
+              "programEndDate": "2017-12-31"
+            }
+          },
+          "buyer": {
+            "contact": {
+              "company": {
+                "name": "BUYER COMPANY NAME 3"
+              }
+            },
+            "company": {
+              "accountId": { "ObjectId": "59df7063bb832a05ecde0001" }
+            }
+          },
+          "supplier": {
+            "contact": {
+              "id": { "ObjectId": "59cc6d13bb832a1ed81c0050" },
+              "emailAddress": "chain_2@test.com",
+              "fullName": "CHAIN 2 REP",
+              "company": {
+                "accountId" : { "ObjectId": "56cc6d13bb832a1ed81c0050" },
+                "name": "CHAIN 2",
+                "type": "CHAIN"
+              }
+            },
+            "company": {
+              "entityId": { "ObjectId": "56014c0a9537801174122050" }
+            }
+          },
+          "state": {
+            "status": "CREATED"
+          }
+        },
+        {
+          "description": "Error Test: Bid Deleted Test",
+          "_id": { "ObjectId": "5a0c8569bb832a2128f20060" },
+          "rfp": {
+            "specifications": {
+              "programEndDate": "2017-12-31"
+            }
+          },
+          "buyer": {
+            "contact": {
+              "company": {
+                "name": "BUYER COMPANY NAME"
+              }
+            },
+            "company": {
+              "accountId": { "ObjectId": "59df7063bb832a05ecde0001" }
+            }
+          },
+          "supplier": {
+            "contact": {
+              "id": { "ObjectId": "59cc6d13bb832a1ed81c0010" },
+              "emailAddress": "error@test.com",
+              "fullName": "HOTEL 1 REP",
+              "company": {
+                "accountId" : { "ObjectId": "56cc6d13bb832a1ed81c0010" },
+                "name": "HOTEL 1",
+                "type": "HOTEL"
+              }
+            },
+            "company": {
+              "entityId": { "ObjectId": "56014c0a9537801174122010" }
+            }
+          },
+          "state": {
+            "status": "DELETED"
+          }
+        },
+        {
+          "description": "Error Test: Bid Without Supplier Contact Test",
+          "_id": { "ObjectId": "5a0c8569bb832a2128f20070" },
+          "rfp": {
+            "specifications": {
+              "programEndDate": "2017-12-31"
+            }
+          },
+          "buyer": {
+            "contact": {
+              "company": {
+                "name": "BUYER COMPANY NAME"
+              }
+            },
+            "company": {
+              "accountId": { "ObjectId": "59df7063bb832a05ecde0001" }
+            }
+          },
+          "supplier": {
+            "company": {
+              "entityId": { "ObjectId": "56014c0a9537801174122010" }
+            }
+          },
+          "state": {
+            "status": "CREATED"
+          }
+        },
+        {
+          "description": "Error Test: Bid Status Changed Test",
+          "_id": { "ObjectId": "5a0c8569bb832a2128f20080" },
+          "rfp": {
+            "specifications": {
+              "programEndDate": "2017-12-31"
+            }
+          },
+          "buyer": {
+            "contact": {
+              "company": {
+                "name": "BUYER COMPANY NAME"
+              }
+            },
+            "company": {
+              "accountId": { "ObjectId": "59df7063bb832a05ecde0001" }
+            }
+          },
+          "supplier": {
+            "contact": {
+              "id": { "ObjectId": "59cc6d13bb832a1ed81c0010" },
+              "emailAddress": "error@test.com",
+              "fullName": "HOTEL 1 REP",
+              "company": {
+                "accountId" : { "ObjectId": "56cc6d13bb832a1ed81c0010" },
+                "name": "HOTEL 1",
+                "type": "HOTEL"
+              }
+            },
+            "company": {
+              "entityId": { "ObjectId": "56014c0a9537801174122010" }
+            }
+          },
+          "state": {
+            "status": "RESPONDED"
+          }
+        }
+      ]
+    }
+  ]
+}

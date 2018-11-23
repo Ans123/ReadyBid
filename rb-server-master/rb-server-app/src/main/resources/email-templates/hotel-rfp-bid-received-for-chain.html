@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ReadyBid</title>
+</head>
+<body id="template-simple" style="margin:0px;padding:0px">
+<style>
+    .ii a[href] { color: white !important;}
+</style>
+
+<div style="margin:0px;padding:0px;font-family:sans-serif;min-height:100%;line-height:130%;border:solid 1px #eceff1;font-size:16px;color:#2d4a58;background-color:white;width:100%!important">
+
+    <table style="border-collapse:collapse;padding:0;font-family:sans-serif;min-height:0;color:transparent; max-width:750px; min-width:480px; width:100%;margin: 0 auto;">
+        <tr>
+            <td>
+                <table style="width: 100%; height:60px; background-color:#16272B;border:solid; border-radius:4px">
+                    <tr>
+                        <td style="text-align:left; padding-top: 6px; padding-left: 20px; width: 50%">
+                            <a href="{CLIENT_ADDRESS}" style="border: 0; outline: 0"><img style="border: 0" src="https://www.readybid.net/images/mail/logo.png" alt="ReadyBid" /> </a>
+                        </td>
+                        <td style="text-align:right; padding-top: 6px; padding-right: 20px; width: 50%">
+                            <span style="font-size:14px;padding:0;color:#dcdee0;">{DATE}</span>
+                        </td>
+                    </tr>
+                </table>
+
+                <table style="width: 100%;background-color:#ffffff; color:#16272B;text-align:left;">
+                    <tr>
+                        <td>
+                            <p style="margin:10px 20px 10px 20px; padding:0; display: {DISPLAY_LOGO_AS};">
+                                <img src="{CLIENT_ADDRESS}/images/logos/{BUYER_CONTACT_COMPANY_LOGO}" style="max-height: 150px; max-width: 150px;">
+                            </p>
+                            <p style="font-size:14px;font-weight:bold;margin:10px 20px 10px 20px; padding:0;color:#263238;">
+                                Hi <span>{RECEIVER_FIRST_NAME}</span>
+                            </p>
+                            <div style="font-size:14px;margin:0px 20px; padding:0; color: #16272B;text-align: justify; line-height: 22px;">
+                                <p>
+                                    {BUYER_FULL_NAME} here with {BUYER_CONTACT_COMPANY_NAME}. Certainly hope all is well
+                                    with you. {RECEIVER_FIRST_NAME}, the {BUYER_CONTACT_COMPANY_NAME} Travel Team would
+                                    like to invite you and {SUPPLIER_CONTACT_COMPANY_NAME} to participate in our upcoming
+                                    <a style="color: #16272B !important" href="{CLIENT_APP_ADDRESS}/public-bid-preview?token={INVITATION_TOKEN}" target="_blank">
+                                        {PROGRAM_YEAR} Hotel RFP bidding process</a>. We are genuinely excited to have
+                                    {SUPPLIER_CONTACT_COMPANY_NAME} as part of this year's {BUYER_COMPANY_NAME} Hotel RFP
+                                    program. {RECEIVER_FIRST_NAME}, the attached link (View RFP and Bid Manager) below
+                                    will take you to the list of {HOTELS_COUNT} as well as provide you with a copy of
+                                    this year's Hotel RFP cover letter and guidelines.
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+                <table style="width: 100%;background-color:#ffffff; color:white;text-align:left;">
+                    <tr>
+                        <td style="vertical-align: bottom;">
+                            <div style="font-size:14px; margin:0px 20px; padding:0; color: #16272B;text-align: left">
+                                <p>
+                                    {RECEIVER_FIRST_NAME}, this year we are working with ReadyBid Hotel RFP out of San Diego.
+                                    You will find their Help and Support link atop every page on their site. Should
+                                    you have any questions please don't hesitate to reach out to me and/or ReadyBid.net.
+                                </p>
+                                <table>
+                                    <tr><td style="width: 300px; font-weight: bold;">RFP Name: </td><td>{RFP_NAME}</td></tr>
+                                    <tr><td style="width: 300px; font-weight: bold;">RFP Due Date: </td><td>{RFP_DUE_DATE_MEDIUM}</td></tr>
+                                    <!--<tr><td style="width: 300px; font-weight: bold;">Volunteer Submissions</td><td>{ESTIMATED_ROOM_NIGHTS}</td></tr>-->
+                                    <tr>
+                                        <td style="width: 300px; font-weight: bold; vertical-align: top;">Primary Decision Making Criteria: </td>
+                                        <td>Best overall value in each of {BUYER_COMPANY_NAME} travel destinations</td>
+                                    </tr>
+                                </table>
+                                <p>
+                                    We look forward to working with you and are happy to answer any questions you might have.
+                                </p>
+                                <p>
+                                    Happy Bidding {RECEIVER_FIRST_NAME} and all the best to you and your team.
+                                </p>
+                                <p>
+                                    Sincerely,
+                                </p>
+                                <p>
+                                    {BUYER_FULL_NAME}<br />
+                                    {BUYER_JOB_TITLE}<br />
+                                    {BUYER_CONTACT_COMPANY_NAME}<br />
+                                    <a style="color: #16272B !important" href="mailto:{BUYER_EMAIL_ADDRESS}" target="_blank">{BUYER_EMAIL_ADDRESS}</a><br />
+                                    {BUYER_PHONE}
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+                <table style="width: 100%;background-color:#ffffff;text-align:center; ">
+                    <tr>
+                        <td style="text-align: center">
+                            <!--<a href="{CLIENT_APP_ADDRESS}/public-chain-bid-preview?token={INVITATION_TOKEN}" target="_blank" style="text-decoration: none;border-style: solid; border-width: 1px;; border-color: #00a99d; border-radius: 4px; color:white;display:inline-block;height: 42px; background-color:#00B8AB">-->
+                            <a href="{CLIENT_APP_ADDRESS}/public-bid-preview?token={INVITATION_TOKEN}" target="_blank" style="text-decoration: none;border-style: solid; border-width: 1px;; border-color: #00a99d; border-radius: 4px; color:white;display:inline-block;height: 42px; background-color:#00B8AB">
+                                <span style="font-size:13px; text-align:center; line-height:40px; padding: 0px 20px ">
+                                    CLICK TO VIEW RFP & BID MANAGER
+                                </span>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+
+                <table style="width: 100%;background-color:#ffffff;text-align:left;color:#263238">
+                    <tr>
+                        <td>
+                            <p style="font-size:14px;margin: 20px; padding:0">Thanks, <br>The ReadyBid Success Team</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table style="width: 100%;height: 60px; ">
+                    <tr >
+                        <td style="text-align: center">
+                            <div style="display: inline-block;">
+                                <a href="https://www.facebook.com/ReadyBidnet-260746941045870/" style="text-decoration: none; color:white; "><span style="width:33px; height: 33px; margin:0px 5px"><img style="border: 0" src="https://www.readybid.net/images/mail/facebook.png" alt="Facebook" /></span></a>
+                                <a href="https://www.linkedin.com/company-beta/10242492/" style="text-decoration: none; color:white; "><span style="width:33px; height: 33px;margin:0px 5px "><img style="border: 0" src="https://www.readybid.net/images/mail/twitter.png" alt="Twitter" /></span></a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+                <table style="width: 100%;border-top: 1px dashed #cfd8dc;line-height:100%; font-size:12pt">
+                    <tr>
+                        <td>
+                            <p style="font-size:12px;text-align:center;color:#b0bec5; margin:20px auto; max-width:85% ">This message was sent from a notification-only email address that does not accept incoming email. Please do not reply to this message. If you have more questions or would like to contact us, please contact our <a href="mailto:support@readybid.net" style="text-decoration:underline; color:#78909c ">Support Center.</a>
+                                This information may be confidential and is intended only for the recipient. If you received this email by mistake, please contact us. Please don't forward this message to anyone else and delete all copies and attachments.</p>
+                            <p style="font-size:11px; font-weight:100;text-align:center;color:#b0bec5; margin:20px auto; ">Copyright &copy; 2016 ReadyBid LTD, All Rights Reserved</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

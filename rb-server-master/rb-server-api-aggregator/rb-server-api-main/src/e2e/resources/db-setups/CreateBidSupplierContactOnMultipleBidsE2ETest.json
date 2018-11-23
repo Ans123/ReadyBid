@@ -1,0 +1,127 @@
+/*
+
+*/
+{
+  "collections": [
+    {
+      "name": "Account",
+      "documents": [
+        {},
+        {
+          "_id" : { "ObjectId" : "59b152fbbb832a069cd20002" },
+          "entityId" : { "ObjectId" : "5a314aebe6d3107588940001" },
+          "type" : "CHAIN",
+          "name" : "CHAIN ACCOUNT",
+          "website": "http://chain.com",
+          "emailAddress": "chain_1@gmail.com",
+          "phone": "1234567",
+          "logo": "logo.jpg",
+          "location": {
+            "address" : {
+              "address1" : "A ADDRESS 1",
+              "address2" : "A ADDRESS 2",
+              "city" : "A CITY",
+              "region" : "A REGION",
+              "zip" : "A ZIP CODE",
+              "country" : "RS"
+            },
+            "fullAddress" : "A FULL ADDRESS",
+            "coordinates" : {
+              "lat" : 100,
+              "lng" : 100
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Chain",
+      "documents": [
+        {
+          "_id" : { "ObjectId" : "5a314aebe6d31075889406a1" },
+          "name" : "Test Chain Entity",
+          "code" : "CW",
+          "industry" : "TRAVEL_AND_HOSPITALITY",
+          "type" : "CHAIN",
+          "subtype" : "MASTER"
+        }
+      ]
+    },
+    {
+      "name": "Bid",
+      "documents": [
+        {},
+        {
+          "description": "Created Bid without supplier contact",
+          "_id": { "ObjectId": "5a0c8569bb832a2128f20100" },
+          "rfp": { "_id": { "ObjectId": "4a0c8569bb832a2128f20000" } },
+          "buyer": { "company": { "accountId": { "ObjectId": "59df7063bb832a05ecde0001" } } },
+          "supplier": {
+            "company": { "chain": { "master": { "_id": { "ObjectId": "5a314aebe6d3107588940001"} } } }
+          },
+          "state": { "status": "CREATED" }
+        },
+        {
+          "description": "Created Bid with supplier contact - for CHAIN Contact",
+          "_id": { "ObjectId": "5a0c8569bb832a2128f20110" },
+          "rfp": { "_id": { "ObjectId": "4a0c8569bb832a2128f20000" } },
+          "buyer": { "company": { "accountId": { "ObjectId": "59df7063bb832a05ecde0001" } } },
+          "supplier": {
+            "company": { "chain": { "master": { "_id": { "ObjectId": "5a314aebe6d3107588940001"} } } },
+            "contact": { "id": { "ObjectId": "59b152fbbb832a069cd20001"} }
+          },
+          "state": { "status": "CREATED" }
+        },
+        {
+          "description": "Created Bid without supplier contact and chain account- for CHAIN Contact",
+          "_id": { "ObjectId": "5a0c8569bb832a2128f20120" },
+          "rfp": { "_id": { "ObjectId": "4a0c8569bb832a2128f20000" } },
+          "buyer": { "company": { "accountId": { "ObjectId": "59df7063bb832a05ecde0001" } } },
+          "supplier": {
+            "company": { "chain": { "master": { "_id": { "ObjectId": "5a314aebe6d31075889406a1"} } } },
+            "contact": { "id": { "ObjectId": "59b152fbbb832a069cd20001"} }
+          },
+          "state": { "status": "CREATED" }
+        },
+        {
+          "description": "Created Bid with supplier contact and without chain account - for CHAIN Contact",
+          "_id": { "ObjectId": "5a0c8569bb832a2128f20130" },
+          "rfp": { "_id": { "ObjectId": "4a0c8569bb832a2128f20000" } },
+          "buyer": { "company": { "accountId": { "ObjectId": "59df7063bb832a05ecde0001" } } },
+          "supplier": {
+            "company": { "chain": { "master": { "_id": { "ObjectId": "5a314aebe6d31075889406a1"} } } }
+          },
+          "state": { "status": "CREATED" }
+        },
+        {
+          "description": "Deleted Bid for CHAIN Contact",
+          "_id": { "ObjectId": "5a0c8569bb832a2128f20140" },
+          "rfp": { "_id": { "ObjectId": "4a0c8569bb832a2128f20000" } },
+          "buyer": { "company": { "accountId": { "ObjectId": "59df7063bb832a05ecde0001" } } },
+          "supplier": {
+            "company": { "chain": { "master": { "_id": { "ObjectId": "5a314aebe6d3107588940001"} } } }
+          },
+          "state": { "status": "DELETED" }
+        },
+        {
+          "description": "Sent Bid for CHAIN Contact",
+          "_id": { "ObjectId": "5a0c8569bb832a2128f20150" },
+          "rfp": { "_id": { "ObjectId": "4a0c8569bb832a2128f20000" } },
+          "buyer": { "company": { "accountId": { "ObjectId": "59df7063bb832a05ecde0001" } } },
+          "supplier": {
+            "company": { "chain": { "master": { "_id": { "ObjectId": "5a314aebe6d3107588940001"} } } }
+          },
+          "state": { "status": "SENT" }
+        },
+        {
+          "description": "Unauthorized Bid",
+          "_id": { "ObjectId": "5a0c8569bb832a2128f20160" },
+          "rfp": { "_id": { "ObjectId": "4a0c8569bb832a2128f20000" } },
+          "buyer": { "company": { "accountId": { "ObjectId": "59df7063bb832a05ecde0002" } } },
+          "supplier": { "company": { "entityId": { "ObjectId": "56014c0a9537801174120001"} } },
+          "state": { "status": "CREATED" }
+        }
+      ]
+    }
+  ]
+}

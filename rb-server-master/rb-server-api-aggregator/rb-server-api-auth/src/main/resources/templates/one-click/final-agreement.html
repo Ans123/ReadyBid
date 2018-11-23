@@ -1,0 +1,61 @@
+<div><img src="{buyerLogo}" class="letter-logo" /></div>
+<h1 class="md-title">{buyerCompanyName} Final Contract For {propertyName} - <strong>DEMO</strong></h1>
+<p>Date: {agreementDate}</p>
+<p>
+    {supplierFullName}<br/>
+    {propertyName}<br/>
+    {propertyAddress1}<br/>
+</p>
+<p><strong>Dear {supplierFirstName}:</strong></p>
+<p>On behalf of {buyerCompanyName}, I am pleased to inform you that your hotel has been accepted into our {rfpProgramYear} Global Hotel Program.</p>
+<p>At this time, we request that you communicate the {rfpProgramYear} {buyerCompanyName} rates to your Front Office staff and Reservations Department.  Additionally, please ensure that the rates have been forwarded to your chain/representative Central Reservation office, so that the rates will be accessible to our travel counselors via the GDS systems as soon as possible.</p>
+<p>These rates, coded as "N" (negotiated), should be loaded under rate code {buyerCompanyName} for Sabre, Apollo/Galileo and Amadeus. All designated {buyerCompanyName} Travel Agencies are attached for your use and review on the page below (Rate Loading Instructions)</p>
+<p>Per your submission, the {rfpProgramYear} {buyerCompanyName} single rate has been published as follows:</p>
+<div style="page-break-inside: avoid;text-align: center;">Rate Grid<br/>
+    <table class="print">
+        <tr>
+            <th colspan="2">Season Start/End Date</th>
+            <th>Negotiated LRA</th>
+            <th>Negotiated Non-LRA</th>
+        </tr>
+        <tr>
+            <td>{start}</td>
+            <td>{end}</td>
+            <td>{lra}</td>
+            <td>{nlra}</td>
+        </tr>
+    </table>
+</div>
+<p>In addition to the above rates the following amenities have been agreed to.</p>
+<ul style="list-style-type: disc;">
+    <li>Wireless - {wirelessFee}</li>
+    <li>Breakfast - {breakfastFee}</li>
+    <li>Parking - {parkingFee}</li>
+    <li>Gym - {fitnessFee}</li>
+    <li>Early Checkout - {earlyCheckoutFee}</li>
+    <li>Airport Shuttle - {airportShuttleFee}</li>
+    <li>Business Center - {businessCenterFee}</li>
+</ul>
+<p>Rate Compliance Agreement - Pursuant to our initial cover letter for {buyerCompanyName} {rfpProgramYear} Hotel RFP (dated {rfpDueDate}), we anticipate running several rate compliance audits to assure your hotel provides our contracted rate (when availability allows). Please click on this link (rate compliance agreement) and select the check box to indicate your understanding and compliance with this agreement.</p>
+<p>{buyerCompanyName}, our employee travelers, and our counselors look forward to working with you during {rfpProgramYear}. If you have any questions, please feel free to contact {buyerFullName} at ({buyerEmail}).</p>
+<p style="page-break-inside: avoid">
+    Sincerely,<br/>
+    {buyerFullName}<br/>
+    {buyerCompanyName}<br/>
+    {buyerEmail}
+</p>
+<div style="page-break-inside: avoid; text-align: center">
+    Rate loading instructions<br/>ARC/IATA INFORMATION<br/>
+    <table class="print">
+        <tr>
+            <th>ARC/IATA#s</th>
+            <th>Pseudo City Code</th>
+            <th>GDS Name</th>
+        </tr>
+        <tr>
+            <td>DEMO</td>
+            <td>DEMO</td>
+            <td>DEMO</td>
+        </tr>
+    </table>
+</div>

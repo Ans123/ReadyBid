@@ -1,0 +1,18 @@
+<table class="final-agreement amenities">
+    <thead>
+    <tr>
+        <th th:each="amenity : ${amenities}" th:text="${amenity.value.label}">Breakfast</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td th:each="amenity : ${amenities}" th:object="${amenity.value}"
+            th:class="*{isIncluded || !exists} ? 'included' : ''">
+            <span th:unless="*{exists}">N/A</span>
+            <span th:if="*{exists}" th:text="*{amount}">$10.00</span>
+
+            <strong th:if="*{isIncluded}"><em>(inc)</em></strong>
+        </td>
+    </tr>
+    </tbody>
+</table>

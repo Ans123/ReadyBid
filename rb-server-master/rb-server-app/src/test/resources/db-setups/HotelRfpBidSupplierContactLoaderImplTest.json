@@ -1,0 +1,49 @@
+{
+  "collections": [
+    {
+      "name": "Bid",
+      "documents": [
+        {},
+        {
+          "_id" : { "ObjectId" : "5a005ea1bb832a0b00c83df2" },
+          "status" : {
+            "value" : "NEGOTIATION_RESPONDED"
+          },
+          "rfp" : {
+            "_id" : { "ObjectId" : "5a005793bb832a0b00c83dee" }
+          },
+          "supplier": {
+            "company": {
+              "entityId": {"ObjectId": "59ad51a3bb832a27e8d38ff9" },
+              "chain": {
+                "master": {
+                  "_id": {"ObjectId": "59ad51a3bb832a27e8d38000"}
+                }
+              }
+            }
+          }
+        },
+        {
+          "_id" : { "ObjectId" : "5a005ea1bb832a0b00c83df3" },
+          "status" : {
+            "value" : "NEGOTIATION_RESPONDED"
+          },
+          "rfp" : {
+            "_id" : { "ObjectId" : "5a005793bb832a0b00c83dee" }
+          },
+          "supplier": {
+            "company": {
+              "entityId": {"ObjectId": "59ad51a3bb832a27e8d38ff0" },
+              "chain": {
+                "master": {
+                  "_id": {"ObjectId": "59ad51a3bb832a27e8d38001"}
+                }
+              }
+            }
+          }
+        }
+
+      ]
+    }
+  ]
+}
